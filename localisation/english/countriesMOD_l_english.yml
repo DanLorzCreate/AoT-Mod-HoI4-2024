@@ -1,0 +1,284 @@
+﻿l_english:
+ TES:0 "Unknown"
+ TES_DEF:0 "Unknown"
+ TES_ADJ:0 "Unknown"
+ 
+ ELD_fascism:0 "Eldian Empire"
+ ELD_fascism_DEF:0 "Eldian Empire"
+ ELD_democratic:0 "Eldian Empire"
+ ELD_democratic_DEF:0 "Eldian Empire"
+ ELD_neutrality:0 "Eldian Empire"
+ ELD_neutrality_DEF:0 "Eldian Empire"
+ ELD_communism:0 "Eldian Empire"
+ ELD_communism_DEF:0 "Eldian Empire"
+ ELD_fascism_ADJ:0 "Eldian"
+ ELD_democratic_ADJ:0 "Eldian"
+ ELD_neutrality_ADJ:0 "Eldian"
+ ELD_communism_ADJ:0 "Eldian"
+ ELD:0 "Eldian Empire"
+ ELD_DEF:0 "Eldian"
+ ELD_ADJ:0 "Eldian"
+ 
+ ######### ATTACK ON TITAN ######### 
+ 
+ RSS:0 "Reiss Royalty"
+ RSS_DEF:0 "Reiss Family"
+ RSS_ADJ:0 "Reiss Family"
+ RSS_EARLY:0 "Kingdom of Mankind"
+ SVC:0 "Survey Corps"
+ SVC_DEF:0 "Survey Corps"
+ SVC_ADJ:0 "Survey Corps"
+ 
+ GRC:0 "Garrison Corps"
+ GRC_DEF:0 "Garrison Corps"
+ GRC_ADJ:0 "Garrison Corps"
+ 
+ MYP:0 "Military Police"
+ MYP_DEF:0 "Military Police"
+ MYP_ADJ:0 "Military Police"
+ 
+ CAD:0 "Cadet's Coup"
+ CAD_DEF:0 "Cadet's Coup"
+ CAD_ADJ:0 "Cadet's Coup"
+ 
+ ZCY:0 "Zachary's Coup"
+ ZCY_DEF:0 "Zachary's Coup"
+ ZCY_ADJ:0 "Zachary's Coup"
+ 
+ HMN:0 "Human Rebels"
+ HMN_DEF:0 "Human Rebels"
+ HMN_ADJ:0 "Human Rebels"
+ 
+ BDT:0 "Bandit Rebels"
+ BDT_DEF:0 "Bandit Rebels"
+ BDT_ADJ:0 "Bandit Rebels"
+ 
+ WAL:0 "Church of the Walls"
+ WAL_DEF:0 "Wall Cult"
+ WAL_ADJ:0 "Wall Cultists"
+ 
+ AKR:0 "Ackermann Rebels"
+ AKR_DEF:0 "Ackermann Rebels"
+ AKR_ADJ:0 "Ackermann Rebels"
+ AKR_KENNY:0 "Kenny's Corps"
+ TTN:0 "Titans"
+ TTN_DEF:0 "Titans"
+ TTN_ADJ:0 "Titans"
+ 
+ 
+ PDS:0 "Paradis"
+ PDS_DEF:0 "Paradis Government"
+ PDS_ADJ:0 "Paradis"
+ PDS_EARLY:0 "Kingdom of Humanity"
+ YGR:0 "Yeagerists"
+ YGR_DEF:0 "Yeagerist"
+ YGR_ADJ:0 "Yeagerist"
+ AER:0 "Anti-Eldian Rebels"
+ AER_DEF:0 "Anti-Eldian Rebels"
+ AER_ADJ:0 "Anti-Eldian Rebels"
+ AEE:0 "Anti-Eren Expedition"
+ AEE_DEF:0 "Anti-Eren Expedition"
+ AEE_ADJ:0 "Anti-Eren Expedition"
+ ERN:0 "Eren Yeager"
+ ERN_DEF:0 "Eren Yeager"
+ ERN_ADJ:0 "Eren Yeager"
+ YMR:0 "Ymir's Empire"
+ YMR_DEF:0 "Ymir's Empire"
+ YMR_ADJ:0 "Ymir's Empire"
+ 
+ 
+ 
+ MLY:0 "Marley"
+ MLY_DEF:0 "Marley Empire"
+ MLY_ADJ:0 "Marleyan"
+ MLY_EARLY:0 "Titan Homeland"
+ LBO:0 "Liberio"
+ LBO_DEF:0 "Liberio"
+ LBO_ADJ:0 "Marleyan"
+ ZKE:0 "Zeke's Expedition"
+ ZKE_DEF:0 "Zeke's Expedition"
+ ZKE_ADJ:0 "Marleyan"
+ OYK:0 "Onyankopon's Expedition"
+ OYK_DEF:0 "Onyankopon's Expedition"
+ OYK_ADJ:0 "Marleyan"
+ ELC:0 "Eldian Collaborators"
+ ELC_DEF:0 "Eldian Collaborators"
+ ELC_ADJ:0 "Marleyan"
+ LLB:0 "Marleyan Liberia"
+ LLB_DEF:0 "Marleyan Liberia"
+ LLB_ADJ:0 "Marleyan"
+ LBY:0 "Marleyan Libya"
+ LBY_DEF:0 "Marleyan Libya"
+ LBY_ADJ:0 "Marleyan"
+ MLC:0 "Marleyan Carthago"
+ MLC_DEF:0 "Marleyan Carthago"
+ MLC_ADJ:0 "Marleyan"
+ 
+ 
+ 
+ HZR:0 "Hizuru"
+ HZR_DEF:0 "Hizuru Shogunate"
+ HZR_ADJ:0 "Hizuru"
+ 
+ XXK:0 "Not Korea"
+ XXK_DEF:0 "Not Korea"
+ XXK_ADJ:0 "Not Korea"
+ XXC:0 "Not China"
+ XXC_DEF:0 "Not China"
+ XXC_ADJ:0 "Not China"
+ 
+ 
+ ######### CROSSOVER: ANIMES ######### 
+ 
+ 
+ IZE:0 "Izetta Swiss"
+ IZE_DEF:0 "Izetta Swiss"
+ IZE_ADJ:0 "Izetta Swiss"
+ AMS:0 "Amestris"
+ AMS_DEF:0 "Amestris"
+ AMS_ADJ:0 "Amestris"
+ 
+ AAA:0 "North Anglia"
+ AAA_DEF:0 "North Anglia"
+ AAA_ADJ:0 "North Anglian"
+ AAB:0 "South Anglia"
+ AAB_DEF:0 "South Anglia"
+ AAB_ADJ:0 "South Anglian"
+ 
+ 
+ ######### VALKYRIA CHRONICLES ######### 
+ 
+ 
+ GAL:0 "Gallia"
+ GAL_DEF:0 "Gallian Principality"
+ GAL_ADJ:0 "Gallian"
+ GLE:0 "Gallian Empire"
+ GLE_DEF:0 "Gallian Empire"
+ GLE_ADJ:0 "Gallian"
+ GLA:0 "Gallian Army Coup"
+ GLA_DEF:0 "Gallian Army Coup"
+ GLA_ADJ:0 "Gallian"
+ GSN:0 "Gassenarl's Gallia"
+ GSN_DEF:0 "Gassenarl's Gallia"
+ GSN_ADJ:0 "Gallian"
+ ALC:0 "Alicia's Rebellion"
+ ALC_DEF:0 "Alicia's Rebellion"
+ ALC_ADJ:0 "Alicia's Rebellion"
+ SQZ:0 "Italica"
+ SQZ_DEF:0 "Italica"
+ SQZ_ADJ:0 "Italican"
+ FHR:0 "Italica"
+ FHR_DEF:0 "Italica"
+ FHR_ADJ:0 "Italican"
+ 
+ EEE:0 "Italica"
+ EEE_DEF:0 "Italica"
+ EEE_ADJ:0 "Italican"
+ VLK:0 "Valkur Rebels"
+ VLK_DEF:0 "Valkur Rebels"
+ VLK_ADJ:0 "Valkur Rebels"
+ DCS:0 "Darcsen Rebels"
+ DCS_DEF:0 "Darcsen Rebels"
+ DCS_ADJ:0 "Darcsen Rebels"
+ MAX:0 "Maximillian's Empire"
+ MAX_DEF:0 "Maximillian's Coup"
+ MAX_ADJ:0 "Maximillian's Coup"
+ XOO:0 "X-0"
+ XOO_DEF:0 "X-0"
+ XOO_ADJ:0 "X-0"
+ CLR:0 "Calamity Raven"
+ CLR_DEF:0 "Calamity Raven"
+ CLR_ADJ:0 "Calamity Raven"
+ 
+ ######### FRANCHISE ######### 
+ 
+ 
+ #ELD:0 "Italica"
+ #ELD_DEF:0 "Italica"
+ #ELD_ADJ:0 "Italican"
+ 
+ #ELD:0 "Italica"
+ #ELD_DEF:0 "Italica"
+ #ELD_ADJ:0 "Italican"
+ 
+ #ELD:0 "Italica"
+ #ELD_DEF:0 "Italica"
+ #ELD_ADJ:0 "Italican"
+ 
+ #ELD:0 "Italica"
+ #ELD_DEF:0 "Italica"
+ #ELD_ADJ:0 "Italican"
+ 
+ #ELD:0 "Italica"
+ #ELD_DEF:0 "Italica"
+ #ELD_ADJ:0 "Italican"
+ 
+ #ELD:0 "Italica"
+ #ELD_DEF:0 "Italica"
+ #ELD_ADJ:0 "Italican"
+ 
+ #ELD:0 "Italica"
+ #ELD_DEF:0 "Italica"
+ #ELD_ADJ:0 "Italican"
+ 
+ #ELD:0 "Italica"
+ #ELD_DEF:0 "Italica"
+ #ELD_ADJ:0 "Italican"
+ 
+ #ELD:0 "Italica"
+ #ELD_DEF:0 "Italica"
+ #ELD_ADJ:0 "Italican"
+ 
+ #ELD:0 "Italica"
+ #ELD_DEF:0 "Italica"
+ #ELD_ADJ:0 "Italican"
+ 
+ #ELD:0 "Italica"
+ #ELD_DEF:0 "Italica"
+ #ELD_ADJ:0 "Italican"
+ 
+ #ELD:0 "Italica"
+ #ELD_DEF:0 "Italica"
+ #ELD_ADJ:0 "Italican"
+ 
+ #ELD:0 "Italica"
+ #ELD_DEF:0 "Italica"
+ #ELD_ADJ:0 "Italican"
+ 
+ #ELD:0 "Italica"
+ #ELD_DEF:0 "Italica"
+ #ELD_ADJ:0 "Italican"
+ 
+ #ELD:0 "Italica"
+ #ELD_DEF:0 "Italica"
+ #ELD_ADJ:0 "Italican"
+ 
+ #ELD:0 "Italica"
+ #ELD_DEF:0 "Italica"
+ #ELD_ADJ:0 "Italican"
+ 
+ 
+ 
+ 
+ 
+ EMPIRE_SADERA:0 "The Empire" 
+ EMP_fascism:0 "Saderan Empire"
+ EMP_fascism:0 "Saderan Empire"
+ EMP_fascism_DEF:0 "the Saderan Empire"
+ EMP_democratic:0 "Saderan Republic"
+ EMP_democratic_DEF:0 "the Saderan Republic"
+ EMP_neutrality:1 "Saderan Empire"
+ EMP_neutrality_DEF:1 "the Saderan Empire"
+ EMP_communism:0 "Sadera"
+ EMP_communism_DEF:0 "Sadera"
+ EMP_fascism_ADJ:0 "Saderan"
+ EMP_democratic_ADJ:0 "Saderan"
+ EMP_neutrality_ADJ:0 "Saderan"
+ EMP_communism_ADJ:0 "Saderan"
+ EMP:0 "Sadera"
+ EMP_DEF:0 "Sadera"
+ EMP_ADJ:0 "Saderan"
+ 
+ 
+ 
+
