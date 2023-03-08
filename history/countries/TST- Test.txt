@@ -1,0 +1,55 @@
+﻿capital = 1 #ITALICA 
+
+#oob = "TST_2010" 
+
+set_research_slots = 2 
+set_stability = 1.0 
+set_war_support = 1.0
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_convoys = 20
+
+#set_politics = {
+#	ruling_party = democratic
+#	last_election = "1936.1.1"
+#	election_frequency = 48
+#	elections_allowed = yes
+#}
+#set_popularities = {
+#	democratic = 50
+#	fascism = 36
+#	communism = 10
+#	neutrality = 4
+#}
+#
+#create_country_leader = {
+#	name = "Falmart World"
+#	desc = "POLITICS_MARIE_T_SMITH_DESC"
+#	picture = "GFX_portrait_falmart"
+#	expire = "1965.1.1"
+#	ideology = conservatism
+#	traits = {
+#		#
+#	}
+#}
+
+#recruit_character = TES_countryleader_01 
+#recruit_character = TES_political_advisor_01 
+#recruit_character = TES_political_advisor_02 
+#recruit_character = TES_high_command_army_01 
+#recruit_character = TES_high_command_navy_01 
+#recruit_character = TES_theorist_01 
+#recruit_character = TES_theorist_02 
+#recruit_character = TES_army_chief_01 
+#recruit_character = TES_army_chief_02 
+#recruit_character = TES_navy_chief_01 
+#recruit_character = TES_navy_chief_02 
+#recruit_character = TES_air_chief_01 
+#recruit_character = TES_air_chief_02 
+
+#recruit_character = TES_placeholder 
+

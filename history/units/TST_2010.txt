@@ -1,0 +1,79 @@
+﻿division_template = {
+	name = "Test Infantry I"
+	division_names_group = TST_INFB_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Test Cavalry I"  
+	division_names_group = TST_CAVB_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Test Militia I"  
+	division_names_group = TST_MIL_01
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+	}
+}
+
+
+units = {
+	
+	division= {	# "1a Brigada de Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 999 # STATE 15th 
+		division_template = "Test Infantry I"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+	division= {	# "1a Brigada de Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 369 # STATE 15th 
+		division_template = "Test Infantry I"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+	division= {	# "1a Brigada de Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1099 # STATE 15th 
+		division_template = "Test Infantry I"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+	
+	
+	
+	
+	##### No Notable Naval Forces ##### 
+}
+
+##### No Notable Air Forces #####
+
