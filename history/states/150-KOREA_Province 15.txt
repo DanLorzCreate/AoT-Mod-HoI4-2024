@@ -1,0 +1,17 @@
+state={
+	id=150
+	name="STATE_150"
+	provinces={
+		2342 2357 2376 2385 2410 2436 2446 2478 2503 
+	}
+	manpower=1150
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland   
+	
+	history={
+		owner = KOR 
+		#victory_points = { 1 0 } #NoName 
+		
+	}
+}

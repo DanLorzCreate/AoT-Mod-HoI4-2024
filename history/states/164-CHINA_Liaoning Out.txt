@@ -1,0 +1,17 @@
+state={
+	id=164
+	name="STATE_164"
+	provinces={
+		1437 1556 1589 1608 1634 1676 1677 1702 1705 1706 1731 1757 1782 1784 1785 1811 1847 
+	}
+	manpower=1164
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland   
+	
+	history={
+		owner = CHI 
+		#victory_points = { 1 0 } #NoName 
+		
+	}
+}

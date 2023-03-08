@@ -1,0 +1,11 @@
+state={
+	id=175
+	name="STATE_175"
+	provinces={
+		1721 1815 1828 1831 1876 1933 1934 1981 
+	}
+	manpower=1175
+	buildings_max_level_factor=1.000
+	local_supplies=0.000 
+state_category = wasteland 
+}

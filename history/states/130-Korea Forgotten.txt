@@ -1,0 +1,18 @@
+state={
+	id=130
+	name="STATE_130"
+	provinces={
+		2916 2924 2932 2942 2984 2985 2993  
+	}
+	manpower=1130
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland   
+	
+	history={
+		owner = KOR 
+		#victory_points = { 1 0 } #LastState 
+		
+	}
+}
+#Replace The Americas With another ID Instead#  

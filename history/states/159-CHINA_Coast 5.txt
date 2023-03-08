@@ -1,0 +1,17 @@
+state={
+	id=159
+	name="STATE_159"
+	provinces={
+		1409 1410 1411 1412 1413 1445 1460 1471 1508 1513 1515 1573 
+	}
+	manpower=1159
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = rural   
+	
+	history={
+		owner = CHI 
+		#victory_points = { 1 0 } #NoName 
+		
+	}
+}

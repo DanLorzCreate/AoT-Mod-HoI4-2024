@@ -1,0 +1,17 @@
+state={
+	id=101
+	name="STATE_101"
+	provinces={
+		3028 3068 3108 3127 3132 3142 3157 3164 3178 3190 3193 
+	}
+	manpower=1101
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland   
+	
+	history={
+		owner = JAP 
+		#victory_points = { 1 0 } #NoName 
+		
+	}
+}

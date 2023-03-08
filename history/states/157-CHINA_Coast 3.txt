@@ -1,0 +1,17 @@
+state={
+	id=157
+	name="STATE_157"
+	provinces={
+		1335 1735 1750 1770 1773 1798 1808 1817 1821 1826 1833 1843 1849 1860 1863 1867 1878 1884 1890 1899 1902 1906 1909 1931 1941 1949 1958 1967 1968 1972 1976 1994 2005 2009 2010 2017 2070 2071 2073 2080 2086 2103 
+	}
+	manpower=1157
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = rural   
+	
+	history={
+		owner = CHI 
+		#victory_points = { 1 0 } #NoName 
+		
+	}
+}
