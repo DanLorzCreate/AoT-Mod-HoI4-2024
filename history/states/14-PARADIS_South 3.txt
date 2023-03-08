@@ -1,0 +1,17 @@
+state={
+	id=14
+	name="STATE_14"
+	provinces={
+		7247 7294 7380 7453 
+	}
+	manpower=1014
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland   
+	
+	history={
+		owner = PDS 
+		#victory_points = { 1 0 } #NoName 
+		
+	}
+}

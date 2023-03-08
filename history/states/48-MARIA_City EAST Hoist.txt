@@ -1,0 +1,17 @@
+state={
+	id=48
+	name="STATE_48"
+	provinces={
+		7915 7916 7946 7953 7994 8022 8041 8063 8071 8108 
+	}
+	manpower=1048
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = town   
+	
+	history={
+		owner = RSS 
+		#victory_points = { 1 0 } #NoName 
+		
+	}
+}

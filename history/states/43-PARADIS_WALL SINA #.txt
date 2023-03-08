@@ -1,0 +1,18 @@
+state={
+	id=43
+	name="STATE_43"
+	provinces={
+		8244 8251 8252 8268 8298 8300 8352 8430 8432 8498 8500 8544 8545 8607 8682 8683 8716 8737 8738 8748 
+	}
+	manpower=1043 
+	impassable = yes 
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland   
+	
+	history={
+		owner = RSS 
+		#victory_points = { 1 0 } #NoName 
+		
+	}
+}

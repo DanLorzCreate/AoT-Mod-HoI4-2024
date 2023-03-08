@@ -1,0 +1,17 @@
+state={
+	id=70
+	name="STATE_70"
+	provinces={
+		9004 9014 9022 9023 9026 9034 9055 9056 9057 9060 9067 
+	}
+	manpower=1070
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland   
+	
+	history={
+		owner = RSS 
+		#victory_points = { 1 0 } #NoName 
+		
+	}
+}

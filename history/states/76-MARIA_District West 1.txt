@@ -1,0 +1,17 @@
+state={
+	id=76
+	name="STATE_76"
+	provinces={
+		8762 8763 8806 8819 8836 8874 8904 8943 
+	}
+	manpower=1076
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland   
+	
+	history={
+		owner = RSS 
+		#victory_points = { 1 0 } #NoName 
+		
+	}
+}

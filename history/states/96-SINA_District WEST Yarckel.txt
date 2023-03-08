@@ -1,0 +1,17 @@
+state={
+	id=96
+	name="STATE_96"
+	provinces={
+		8465 8481 8507 8554 8567 8605 8637 
+	}
+	manpower=1096
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = rural   
+	
+	history={
+		owner = RSS 
+		#victory_points = { 1 0 } #NoName 
+		
+	}
+}

@@ -1,0 +1,18 @@
+state={
+	id=3
+	name="STATE_3"
+	provinces={
+		9759 
+	}
+	manpower=1130
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland   
+	
+	history={
+		owner = TST 
+		#victory_points = { 1 0 } #LastState 
+		
+	}
+}
+#RGB_R_G_B 

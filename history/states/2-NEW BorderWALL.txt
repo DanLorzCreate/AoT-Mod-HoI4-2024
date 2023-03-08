@@ -1,0 +1,19 @@
+state={
+	id=2
+	name="STATE_2"
+	provinces={
+		1357 1477 1561 1658 1760 1844 1939 2035 2114 2172 2224 2300 2400 2520 2593 2678 2777 2877 2978 3082 3173 3319 3432 3566 3677 3816 3983 4140 4320 4489 4693 4934 5180 5445  5827 6044 6256  6599 6692 6833 7185   7613 7842 8064 8304  8817 8984 9101 9216 9318 9404 9509  9650 9681 9719 
+	}
+	manpower=1002
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland   
+	impassable = yes 
+	history={
+		owner = TST 
+		#victory_points = { 1 0 } #NoName 
+		
+	}
+}
+#MOVE 6457 to STATE 343rd 
+#MOVE 8583 to STATE 366th
