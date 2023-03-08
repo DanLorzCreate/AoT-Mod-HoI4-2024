@@ -1,0 +1,11 @@
+state={
+	id=319
+	name="STATE_319"
+	provinces={
+		7558 7563 7582 7583 7647 7657 7669 7725 7736 7766 
+	}
+	manpower=1319
+	buildings_max_level_factor=1.000
+	local_supplies=0.000 
+state_category = wasteland 
+}
