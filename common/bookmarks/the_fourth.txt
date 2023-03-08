@@ -1,0 +1,233 @@
+bookmarks = {
+	bookmark = {
+		name = "THE_FOURTH_NAME"
+		desc = "THE_FOURTH_DESC"
+		date = 2020.4.1.12
+		picture = "GFX_select_date_1941"
+		default_country = "USA"
+		
+		
+		"TES"={
+			history = "TES_THE_FOURTH_DESC"
+			ideology = fascism
+			ideas = {
+				
+				
+			}
+			focuses = {
+			
+			}
+		}
+		
+		"JAP"={
+			history = "JAP_THE_FOURTH_DESC"
+			ideology = democratic
+			ideas = {
+				
+				
+			}
+			focuses = {
+			
+			}
+		}
+		
+		"EMP"={
+			history = "EMP_THE_FOURTH_DESC"
+			ideology = fascism
+			ideas = {
+				ETH_conservative_high_command_idea
+				ETH_the_heroes_of_adwa_idea
+				ETH_on_our_own_idea
+			}
+			focuses = {
+				ETH_rally_around_the_emperor
+				ETH_reach_out_to_the_italians
+				ETH_military_communism
+			}
+		}
+		
+		"ELB"={
+			history = "ELB_THE_FOURTH_DESC"
+			ideology = neutrality
+			ideas = {
+				
+				
+			}
+			focuses = {
+			
+			}
+		}
+		
+		"ITL"={
+			history = "ITL_THE_FOURTH_DESC"
+			ideology = neutrality
+			ideas = {
+				
+				
+			}
+			focuses = {
+			
+			}
+		}
+		
+		"RND"={
+			history = "RND_THE_FOURTH_DESC"
+			ideology = democratic
+			ideas = {
+				
+				
+			}
+			focuses = {
+			
+			}
+		}
+		
+		
+		
+		"---"={
+			history = "OTHER_THE_FOURTH_DESC"
+		}
+		
+		# minors from DLC #### 
+		
+		"USA"={
+			minor = yes
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				#home_of_the_free 
+				#great_depression_3 
+				#air_war_plans_division_focus 
+				#USA_war_department 
+				#new_deal 
+			}
+			focuses = {
+			
+			}
+		}
+		
+		"CHI"={
+			minor = yes
+			history = "CHI_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				
+				
+			}
+			focuses = {
+			
+			}
+		}
+		"RUS"={
+			minor = yes
+			history = "RUS_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				
+				
+			}
+			focuses = {
+			
+			}
+		}
+		
+		###### TESTING NEW MENU ###### 
+		
+		"CAN"={
+			minor = yes
+			history = "CAN_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				CAN_great_depression_1
+				CAN_conscription_crisis
+			}
+			focuses = {
+				CAN_skewer_the_eagle
+				CAN_north_american_alliance
+				CAN_join_comintern
+			}
+		}
+		"AST"={
+			minor = yes
+			history = "AST_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				AST_great_depression_1
+			}
+			focuses = {
+				AST_never_another_gallipoli
+				AST_support_indonesian_uprising
+				AST_delegation_to_china
+			}
+		}
+		"NZL"={
+			minor = yes
+			history = "NZL_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				NZL_bob_semple_tank
+				NZL_independent_new_zealand
+				NZL_maori_volunteers
+			}
+		}
+		"SAF"={
+			minor = yes
+			history = "SAF_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				SAF_ossewabrandwag
+				SAF_history_of_segregation
+			}
+			focuses = {
+				SAF_secure_interests_in_africa
+				SAF_support_the_german_coup
+				SAF_anti_colonialist_crusade
+			}
+		}
+		"RAJ"={
+			minor = yes
+			history = "RAJ_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				RAJ_agrarian_society
+				RAJ_princely_states
+			}
+			focuses = {
+				RAJ_all_india_forward_bloc
+				RAJ_indian_gurkhas
+				RAJ_the_smiling_buddha
+			}
+		}
+		"CZE"={
+			minor = yes
+			history = "CZE_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				CZE_skoda_works
+				CZE_divided_nation
+			}
+			focuses = {
+				CZE_sudeten_1
+				CZE_industrial_legacy
+				CZE_military_research_institute
+			}
+		}
+
+		
+		
+		
+		
+		############################## 
+		############################## 
+		
+
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+		
+	}
+}

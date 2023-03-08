@@ -1,0 +1,90 @@
+TST = "countries/Test.txt"
+
+RSS = "countries/Reiss Royalty.txt" 
+SVC = "countries/Survey Corps.txt" 
+GRC = "countries/Garrison Corps.txt" 
+MYP = "countries/Military Police.txt" 
+CAD = "countries/Cadets Coup.txt" 
+ZCY = "countries/Zachary's Coup.txt" 
+HMN = "countries/Human Rebels.txt" 
+BDT = "countries/Bandit Rebels.txt" 
+WAL = "countries/Wall Cult.txt" 
+TTN = "countries/Titans.txt" 
+AKR = "countries/Ackermann Rebels.txt" 
+
+
+PDS = "countries/Paradis Government.txt" 
+YGR = "countries/Yeagerists.txt" 
+AER = "countries/Anti-Eldian Rebels.txt" 
+AEE = "countries/Anti-Eren Expedition.txt" 
+
+ELD = "countries/Eldian Empire.txt" 
+ERN = "countries/Eren Yeager.txt" 
+YMR = "countries/Ymir Empire.txt" 
+
+MLY = "countries/Marley Empire.txt" 
+LBO = "countries/Liberio.txt" 
+ZKE = "countries/Zeke Expedition.txt" 
+OYK = "countries/Onyankopon Expedition.txt" 
+ELC = "countries/Eldian Collaborators.txt" 
+LLB = "countries/Marley Liberia.txt" 
+LBY = "countries/Marley Libya.txt" 
+MLC = "countries/Marley Carthago.txt" 
+
+HZR = "countries/Hizuru Shogunate.txt" 
+XXK = "countries/Not Korea.txt" 
+XXC = "countries/Not China.txt" 
+IZE = "countries/Izetta Swiss.txt" 
+AMS = "countries/Amestris.txt" 
+
+AAA = "countries/North Anglia.txt" 
+AAB = "countries/South Anglia.txt" 
+
+
+GAL = "countries/Gallia.txt" 
+GLE = "countries/Gallian Empire.txt" 
+GLA = "countries/Gallian Army.txt" 
+GSN = "countries/Gassenarl's Gallia.txt" 
+ALC = "countries/Alicia's Rebellion.txt" 
+SQZ = "countries/Squad 446.txt" 
+FHR = "countries/Fhirald.txt" 
+
+EEE = "countries/East Europan Empire.txt" 
+VLK = "countries/Valkur Rebels.txt" 
+DCS = "countries/Darcsen Rebels.txt" 
+MAX = "countries/Maximillian's Empire.txt" 
+XOO = "countries/X-0.txt" 
+CLR = "countries/Calamity Raven.txt" 
+
+
+
+
+#IAA = "countries/Nazarick.txt" 
+#IAB = "countries/Re-Estize Kingdom.txt" 
+#IAC = "countries/Roble Holy Kingdom.txt" 
+#IAD = "countries/Dwarf Kingdom.txt" 
+#IAE = "countries/Quagoas.txt" 
+#IAF = "countries/Demi-Humans.txt" 
+#IAG = "countries/Dark Dwarves.txt" 
+#IAH = "countries/Dark Elves.txt" 
+#IAI = "countries/Elven Kingdom.txt" 
+#IAJ = "countries/Baharuth Empire.txt" 
+#IAK = "countries/Slane Theocracy.txt" 
+#IAL = "countries/Greak Kingdom of Pabilsag.txt" 
+#IAM = "countries/Slutarn.txt" 
+#IAN = "countries/Eryuentia Flying City.txt" 
+#
+#IAO = "countries/Karsanas City-States.txt" 
+#IAP = "countries/Troll Nations.txt" 
+#IAQ = "countries/Great Minotaur Nation.txt" 
+#IAR = "countries/Orc Nation.txt" 
+#IAS = "countries/Wyvern Rider Tribes.txt" 
+#IAT = "countries/Draconic Kingdom.txt" 
+#IAU = "countries/Beastmen Commonwealth.txt" 
+#
+#IAV = "countries/Elves of Tiffania.txt" 
+#IAW = "countries/Tristain.txt" 
+#IAX = "countries/Gallian Kingdom.txt" 
+#IAY = "countries/Romagna Republic.txt" 
+#IAZ = "countries/Alemanya Dukedom.txt" 
+#
