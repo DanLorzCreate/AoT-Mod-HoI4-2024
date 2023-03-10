@@ -10,7 +10,7 @@ state={
 	state_category = rural   
 	
 	history={
-		owner = RSS 
+		owner = MYP 
 		#victory_points = { 1 0 } #NoName 
 		
 	}
