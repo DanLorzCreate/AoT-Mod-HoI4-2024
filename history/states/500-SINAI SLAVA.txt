@@ -1,0 +1,11 @@
+state={
+	id=500
+	name="STATE_500"
+	provinces={
+		5550 5565 5571 5654 5655 5659 5693 5723 5724 5727 5756 5760 5806 5838 9761 9762 9763 9764 
+	}
+	manpower=10
+	buildings_max_level_factor=1.000
+	local_supplies=0.000 
+state_category=wasteland 
+}

@@ -1,0 +1,11 @@
+state={
+	id=485
+	name="STATE_485"
+	provinces={
+		7306 7338 7377 7401 7421 7470 7500 7522 7535 7551 7649 7679 
+	}
+	manpower=10
+	buildings_max_level_factor=1.000
+	local_supplies=0.000 
+state_category = wasteland 
+}
