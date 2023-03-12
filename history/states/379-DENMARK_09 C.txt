@@ -1,0 +1,11 @@
+state={
+	id=379
+	name="STATE_379"
+	provinces={
+		5781 5796 5822 5866 5878 5908 5913 5916 5943 5963 5984 5994 
+	}
+	manpower=10
+	buildings_max_level_factor=1.000
+	local_supplies=0.000 
+state_category=wasteland 
+}

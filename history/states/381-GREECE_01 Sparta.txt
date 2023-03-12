@@ -1,0 +1,11 @@
+state={
+	id=381
+	name="STATE_381"
+	provinces={
+		6425 6451 6455 6463 6498 6517 6538 6555 
+	}
+	manpower=10
+	buildings_max_level_factor=1.000
+	local_supplies=0.000 
+state_category=wasteland 
+}

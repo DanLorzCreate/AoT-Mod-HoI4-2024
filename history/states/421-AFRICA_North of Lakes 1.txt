@@ -1,0 +1,11 @@
+state={
+	id=421
+	name="STATE_421"
+	provinces={
+		9345 9364 9395 9423 9441 9453 9538 9558 9572 
+	}
+	manpower=10
+	buildings_max_level_factor=1.000
+	local_supplies=0.000 
+state_category = wasteland 
+}
