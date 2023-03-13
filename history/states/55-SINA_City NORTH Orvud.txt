@@ -2,7 +2,7 @@ state={
 	id=55
 	name="STATE_55"
 	provinces={
-		8710 8725 8742 8752 
+		8710 8725 8742 8752 9821 9822 9823 9824 9833 9835 9836 
 	}
 	manpower=1055
 	buildings_max_level_factor=1.000
@@ -10,7 +10,7 @@ state={
 	state_category = town   
 	
 	history={
-		owner = MYP 
+		owner = RSS 
 		#victory_points = { 1 0 } #NoName 
 		
 	}

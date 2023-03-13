@@ -2,7 +2,7 @@ state={
 	id=48
 	name="STATE_48"
 	provinces={
-		7915 7916 7946 7953 7994 8022 8041 8063 8071 8108 
+		7915 7916 7946 7953 7994 8022 8041 8063 8071 8108 9893 9894 9895 9896 9897 9898 9899 9900 9901 9902 9903 9904 9905 9906 9907 9908 
 	}
 	manpower=1048
 	buildings_max_level_factor=1.000
@@ -10,7 +10,7 @@ state={
 	state_category = town   
 	
 	history={
-		owner = SVC 
+		owner = RSS 
 		#victory_points = { 1 0 } #NoName 
 		
 	}

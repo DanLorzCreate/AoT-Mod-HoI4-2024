@@ -2,7 +2,7 @@ state={
 	id=44
 	name="STATE_44"
 	provinces={
-		8491 
+		8491 9813 9814 9815 9816 
 	}
 	manpower=1044
 	buildings_max_level_factor=1.000
@@ -11,7 +11,8 @@ state={
 	
 	history={
 		owner = RSS 
-		#victory_points = { 1 0 } #NoName 
+		victory_points = { 8491 10 } #NoName 
 		
 	}
 }
+#23
