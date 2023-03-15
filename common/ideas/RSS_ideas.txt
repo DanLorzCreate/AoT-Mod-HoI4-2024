@@ -1,0 +1,40 @@
+ideas = {
+		country = {
+		
+			RSS_civilian_investments =  {
+								allowed = { tag = RSS}
+
+								picture = generic_exploit_mines
+
+								modifier = {
+									production_speed_industrial_complex_factor = 0.15
+								}
+				}
+
+			RSS_underground_city_excavation_efforts = {
+								allowed = {
+									tag = RSS
+								}							
+								picture = generic_exploit_mines
+								modifier = {
+									consumer_goods_factor = 0.05
+								}
+	
+				}
+			
+			RSS_protected_by_the_walls = {
+						
+						allowed = {
+							tag = RSS
+						}
+						picture = generic_democratic_drift_bonus
+
+						modifier = {
+							stability_factor = 0.30
+							war_support_factor = -0.30 
+							conscription = -0.003
+							land_doctrine_cost_factor = 0.5
+					}
+				}
+		}
+}
