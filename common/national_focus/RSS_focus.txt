@@ -1,0 +1,316 @@
+focus_tree = {
+	id = reiss_royalty_focus
+	country = {
+		factor = 0
+		modifier = {
+				add = 10
+				tag = RSS
+			}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 1200 y = 1500 }
+	
+
+	focus = {
+		id = RSS_economic_development_plan
+		icon = GFX_goal_generic_construct_civilian
+		x = 3
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 9
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 2
+				category = industry	
+			}
+			add_timed_idea =  {
+				idea = RSS_civilian_investments
+				days = 730
+			}
+		}
+	}
+
+	focus = {
+		id = RSS_civilian_investments
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = RSS_economic_development_plan }
+		relative_position_id = RSS_economic_development_plan
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		x = 3
+		y = 2
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+	    }
+	}
+
+	focus = {
+		id = RSS_agricultural_development
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = RSS_civilian_investments}
+		relative_position_id = RSS_civilian_investments
+		cost = 10
+		x = 2
+		y = 3
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = RSS_excavation_efforts
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = RSS_economic_development_plan }
+		relative_position_id = RSS_economic_development_plan
+		cost = 10
+		ai_will_do = {
+			factor = 4
+		}
+		x = 5
+		y = 1
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_tech_bonus = {
+				name = RSS_excavation_bonus
+				bonus = 2.0
+				uses = 3
+				technology = excavation_1
+				technology = excavation_2
+				technology = excavation_3
+				technology = excavation_4
+				technology = excavation_5
+			}
+			add_timed_idea = { idea = RSS_underground_city_excavation_efforts days = 365}
+		}
+	}
+
+	focus = {
+		id = RSS_underground_city_aluminum_excavation
+		icon = GFX_focus_generic_rubber
+		prerequisite = { focus = RSS_excavation_efforts }
+		relative_position_id = RSS_excavation_efforts
+		cost = 10
+		ai_will_do = {
+			factor = 4
+		}
+		x = 5
+		y = 3
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			random_owned_controlled_state = 
+			{
+				add_resource = {
+					type = aluminium
+							amount = 8
+						}
+			}
+			random_owned_controlled_state = 
+			{
+				add_resource = {
+					type = aluminium
+							amount = 8
+						}
+			}
+		}
+	}
+
+	focus = {
+		id = RSS_extra_tech_slot
+		icon = GFX_focus_research
+		prerequisite = { focus = RSS_agricultural_development}
+		prerequisite = {focus = RSS_excavation_efforts}
+		relative_position_id = RSS_agricultural_development
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+       x = 4
+	   y = 3.5
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = RSS_basic_infrastructure_development
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = RSS_economic_development_plan }
+		relative_position_id = RSS_economic_development_plan
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		x = 1
+		y = 1
+		available = {
+			OR = {
+				has_full_control_of_state = 53
+				has_full_control_of_state = 54
+				has_full_control_of_state = 55
+				has_full_control_of_state = 56
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+				53 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+						add_extra_state_shared_building_slots = 2
+					}
+				}
+				54 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+						add_extra_state_shared_building_slots = 2
+					}
+				}
+				55 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+						add_extra_state_shared_building_slots = 2
+					}
+				}
+				56 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+						add_extra_state_shared_building_slots = 2
+					}
+				}
+				
+		}
+	}
+
+	focus = {
+		id = RSS_military_production
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = RSS_economic_development_plan }
+		relative_position_id = RSS_economic_development_plan
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		x = 7
+		y = 1
+		available_if_capitulated = no
+		available = {
+			has_war_support > 0.49
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
