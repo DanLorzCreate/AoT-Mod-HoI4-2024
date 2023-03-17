@@ -1,0 +1,528 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = marley_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = MLY
+		}
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 20 y = 1000 }  
+	initial_show_position = {
+		x = 38
+		y = 0
+	}
+	
+	#I. Marleyean Military#
+	
+	
+	
+	focus = {
+		id = MLY_expand_the_military
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 5
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 9
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			army_experience = 15
+			air_experience = 15
+			navy_experience = 15
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+			add_doctrine_cost_reduction = {
+				name = fleet_in_being_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = fleet_in_being_tree
+			}
+		}
+	}
+	focus = {
+		id = MLY_the_marleyean_spear
+		icon = GFX_focus_ETH_keep_the_chitet
+		prerequisite = { focus = MLY_expand_the_military }
+		x = 15
+		y = 1
+		relative_position_id = MLY_expand_the_military
+		cost = 10
+		
+		search_filters = {FOCUS_FILTER_BALANCE_OF_POWER}
+
+		completion_reward = {
+			army_experience = 25	
+		}
+	}
+	focus = {
+		id = MLY_the_marleyean_airforce
+		icon = GFX_focus_ETH_the_ethiopian_air_force
+		prerequisite = { focus = MLY_expand_the_military }
+
+		x = 0 
+		y = 1
+		relative_position_id = MLY_expand_the_military
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 1.25
+			}
+		}
+
+		search_filters = {FOCUS_FILTER_AIR_XP}
+
+		completion_reward = {
+			air_experience = 15
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = MLY_the_marleyean_shield
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = MLY_expand_the_military }
+
+		x = -6
+		y = 1
+		relative_position_id = MLY_expand_the_military
+		cost = 10
+		available = {
+			any_controlled_state = {
+				is_coastal = yes
+			}
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			random_controlled_state = {
+				limit = { 
+					is_coastal = yes 
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+
+				IF = {
+					limit = { naval_base < 8 }
+					add_building_construction = {
+						type = naval_base
+						level = 1
+						instant_build = yes
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+						    }
+					}
+				}
+				IF = {
+					limit = { 
+						dockyard < 8
+					}
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = MLY_home_defense
+		 icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = MLY_the_marleyean_spear }
+
+		x = -6
+		y = 1
+		relative_position_id = MLY_the_marleyean_spear
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 1.25
+				has_war = yes 
+			}
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			army_experience = 50
+		}
+	}
+	focus = {
+		id = MLY_tactical_officer_training
+		 icon = GFX_focus_eng_special_air_service
+		prerequisite = { focus = MLY_the_marleyean_spear }
+
+		x = 0
+		y = 1
+		relative_position_id = MLY_the_marleyean_spear
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 1.25
+				has_war = yes 
+			}
+		}
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = MLY_no_stone_left_unturned
+		icon = GFX_focus_ETH_peacekeeping_forces
+		prerequisite = { focus = MLY_the_marleyean_spear }
+
+		x = 3
+		y = 1
+		relative_position_id = MLY_the_marleyean_spear
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 0.5 
+			}
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = MLY_nationalistic_army
+		}
+	}
+	focus = {
+		id = MLY_small_arms_modernization
+		 icon = GFX_goal_panzerwaffe
+		prerequisite = { focus = MLY_home_defense }
+
+		x = -2
+		y = 1
+		relative_position_id = MLY_home_defense
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 0.5
+			modifier = {
+				factor = 2
+				has_war = yes 
+			}
+		}
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MLY_small_arms_modernization
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons	
+			}
+		}
+	}
+	focus = {
+		id = MLY_motorized_warfare
+		 icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = MLY_home_defense }
+
+		x = 0
+		y = 1
+		relative_position_id = MLY_home_defense
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 0.5
+			modifier = {
+				factor = 2
+				has_war = yes 
+			}
+		}
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 3.0
+				technology = motorised_infantry	
+			}
+		}
+	}
+	focus = {
+		id = MLY_preparing_for_the_inevitable
+		prerequisite = { focus = MLY_home_defense}
+		relative_position_id = MLY_home_defense
+		x = 2
+		y = 1
+		icon = GFX_goal_generic_fortify_city
+		cost = 10
+		available = {}
+		
+		search_filters = {}
+
+		completion_reward = {
+			add_war_support = 0.1
+			every_owned_state = {
+				limit = {
+					is_capital = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = {
+						id = 5010
+					}
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_ideas = MLY_prepare_for_the_inevitable_idea
+		}
+	}
+	focus = {
+		id = MLY_modern_artillery
+		prerequisite = { focus = MLY_small_arms_modernization}
+		relative_position_id = MLY_small_arms_modernization
+		x = 0
+		y = 1
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10
+		available = {}
+		
+		search_filters = {}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MLY_modern_artillery
+				bonus = 1.0
+				uses = 2
+				category = artillery	
+			}
+		}
+	}
+	focus = {
+		id = MLY_defend_our_sky's
+		prerequisite = { focus = MLY_preparing_for_the_inevitable}
+		relative_position_id = MLY_preparing_for_the_inevitable
+		x = 0
+		y = 1
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10
+		available = {}
+		
+		search_filters = {}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MLY_modern_anti_air
+				bonus = 1.0
+				uses = 2
+				category = cat_anti_air	
+			}
+		}
+	}
+	focus = {
+		id = MLY_mechanized_warfare
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = MLY_motorized_warfare focus = MLY_modern_artillery focus = MLY_defend_our_sky's}
+		x = 0
+		y = 2
+		relative_position_id = MLY_motorized_warfare
+		cost = 10
+		
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+	focus = {
+		id = MLY_armored_warfare
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = MLY_mechanized_warfare}
+		x = 0
+		y = 1
+		relative_position_id = MLY_mechanized_warfare
+		cost = 10
+		
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+		}
+	}
+	focus = {
+		id = MLY_junior_officer_corps
+		 icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = MLY_tactical_officer_training }
+
+		x = -1
+		y = 1
+		relative_position_id = MLY_tactical_officer_training
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 1
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			army_experience = 50
+		}
+	}
+	focus = {
+		id = MLY_camouflage
+		 icon = GFX_focus_prc_infiltration
+		prerequisite = { focus = MLY_tactical_officer_training }
+
+		x = 1
+		y = 1
+		relative_position_id = MLY_tactical_officer_training
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 1.25
+				has_war = yes 
+			}
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			custom_effect_tooltip = ETH_camouflage_army_tt
+			custom_effect_tooltip = ETH_camouflage_air_tt
+			add_to_variable = { ETH_airforce_enemy_army_bonus_air_superiority_factor = -0.15 } 
+		}
+	}
+	focus = {
+		id = MLY_new_weapons_and_tactics
+		 icon = GFX_focus_generic_combined_arms
+		prerequisite = { focus = MLY_junior_officer_corps focus = MLY_camouflage }
+		
+		x = 0
+		y = 1
+		relative_position_id = MLY_junior_officer_corps
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 1
+			}
+		}
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = ETH_new_weapons_and_tactics_bonus
+				bonus = 0.5
+				uses = 4
+				category = infantry_weapons
+				category = armor
+				category = artillery
+			}
+		}
+		
+	focus = {
+		id = MLY_old_reliable
+		 icon = GFX_focus_secret_rearmament
+		prerequisite = { focus = MLY_camouflage focus = MLY_junior_officer_corps }
+	
+		x = 0
+		y = 1
+		relative_position_id = MLY_camouflage
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 1
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			custom_effect_tooltip = ETH_old_reliable_tt
+			add_to_variable = { ETH_army_max_dig_in_factor = 0.5 }
+			add_to_variable = { ETH_army_dig_in_speed_factor = 0.25 }
+			add_to_variable = { ETH_army_modifier_army_sub_unit_infantry_attack_factor = 0.05 }
+			add_to_variable = { ETH_army_modifier_army_sub_unit_infantry_defence_factor = 0.1 }
+			add_to_variable = { ETH_army_modifier_army_sub_unit_infantry_speed_factor = 0.1 }
+			ETH_improve_army_spirit_effect = yes # increase bling value
+		}
+	}
+
+
+
+	
+	}
+	
