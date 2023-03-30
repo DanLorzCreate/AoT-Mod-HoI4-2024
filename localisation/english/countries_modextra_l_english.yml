@@ -1,59 +1,59 @@
 ﻿l_english:
  
- ##########   NON-CANON ISEKAIs Here   ##########
+ ##########   NON-CANON  Here   ##########
  
  TTN:0 "Titans"
  TTN_DEF:0 "Titans"
- TTN_ADJ:0 "Titans"
+ TTN_ADJ:0 "Titan"
  
- #####   Grand Chase MMO Nations   #####
+ #####   Other Nations   #####
  
  RSS:0 "Reiss Royalty"
- RSS_DEF:0 "Eryuell"
- RSS_ADJ:0 "Eryuell"
+ RSS_DEF:0 "Kingdom of the Walls"
+ RSS_ADJ:0 "Reiss"
  
  
- SVC:0 "Elf"
- SVC_DEF:0 "Elf"
- SVC_ADJ:0 "Elf"
- GRC:0 "Serdin"
- GRC_DEF:0 "Serdin"
- GRC_ADJ:0 "Serdin"
- MYP:0 "Kanavan"
- MYP_DEF:0 "Kanavan"
- MYP_ADJ:0 "Kanavan"
+ SVC:0 "Survey Corps"
+ SVC_DEF:0 "Survey Regiment"
+ SVC_ADJ:0 "the Scouts"
+ GRC:0 "Garisson Corps"
+ GRC_DEF:0 "Garisson Regiment"
+ GRC_ADJ:0 "the Garisson"
+ MYP:0 "Military Police"
+ MYP_DEF:0 "Gendarmie Regiment"
+ MYP_ADJ:0 "the Military Police"
  
  
- PDS:0 "Ellias"
- PDS_DEF:0 "Ellias"
- PDS_ADJ:0 "Ellias"
- ELD:0 "KazeAze"
- ELD_DEF:0 "KazeAze"
- ELD_ADJ:0 "KazeAze"
- MLY:0 "Frost House"
- MLY_DEF:0 "Frost"
- MLY_ADJ:0 "Frost"
+ PDS:0 "Paradis"
+ PDS_DEF:0 "Paradis"
+ PDS_ADJ:0 "Paradis"
+ ELD:0 "Eldia"
+ ELD_DEF:0 "Eldia"
+ ELD_ADJ:0 "Eldian"
+ MLY:0 "Marley"
+ MLY_DEF:0 "Marley"
+ MLY_ADJ:0 "Marleyan"
  
- GAL:0 "SilverLand"
- GAL_DEF:0 "SilverLand"
- GAL_ADJ:0 "SilverLand"
- EEE:0 "Xenia"
- EEE_DEF:0 "Xenia"
- EEE_ADJ:0 "Xenia"
- 
- 
- 
- 
- #####   Ys Series Nations   #####
- 
- #####   Overlord Ainz Nations   #####
+ GAL:0 "Gallia"
+ GAL_DEF:0 "Gallia"
+ GAL_ADJ:0 "Gallian"
+ EEE:0 "East Europan Empire"
+ EEE_DEF:0 "the East Europan Imperial Alliance"
+ EEE_ADJ:0 "East Imperial"
  
  
  
  
- #####   Shield Hero Nations   #####
+ #####   [REDACTED] Nations   #####
  
- #####   Fire Emblem Nations   #####
+ #####   [REDACTED] Nations   #####
+ 
+ 
+ 
+ 
+ #####   [REDACTED] Nations   #####
+ 
+ #####   [REDACTED] Nations   #####
  
  
  

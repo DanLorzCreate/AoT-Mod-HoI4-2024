@@ -1,7 +1,10 @@
 ﻿l_english:
- TES:0 "Unknown"
- TES_DEF:0 "Unknown"
- TES_ADJ:0 "Unknown"
+ TST:0 "Unknown"
+ TST_DEF:0 "Unknown"
+ TST_ADJ:0 "Unknown"
+ TES:0 "Unknown" 
+ TES_DEF:0 "Unknown" 
+ TES_ADJ:0 "Unknown" 
  
  ELD_fascism:0 "Eldian Empire"
  ELD_fascism_DEF:0 "Eldian Empire"
@@ -22,8 +25,8 @@
  ######### ATTACK ON TITAN ######### 
  
  RSS:0 "Reiss Royalty"
- RSS_DEF:0 "Reiss Family"
- RSS_ADJ:0 "Reiss Family"
+ RSS_DEF:0 "Kingdom of the Walls"
+ RSS_ADJ:0 "the Reiss Family"
  RSS_EARLY:0 "Kingdom of Mankind"
  SVC:0 "Survey Corps"
  SVC_DEF:0 "Survey Corps"
@@ -63,7 +66,7 @@
  AKR_KENNY:0 "Kenny's Corps"
  TTN:0 "Titans"
  TTN_DEF:0 "Titans"
- TTN_ADJ:0 "Titans"
+ TTN_ADJ:0 "Titan"
  
  
  PDS:0 "Paradis"

@@ -1,0 +1,2223 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = marley_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = MLY
+		}
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 20 y = 2500 }  
+	initial_show_position = {
+		x = 38
+		y = 0
+	}
+	
+	### I. Marleyean Military ### 
+	
+	
+	
+	focus = {
+		id = MLY_expand_the_military
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 5
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 9
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			army_experience = 15
+			air_experience = 15
+			navy_experience = 15
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+			add_doctrine_cost_reduction = {
+				name = fleet_in_being_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = fleet_in_being_tree
+			}
+		}
+	}
+	focus = {
+		id = MLY_the_marleyean_spear
+		icon = GFX_focus_ETH_keep_the_chitet
+		prerequisite = { focus = MLY_expand_the_military }
+		x = 15
+		y = 1
+		relative_position_id = MLY_expand_the_military
+		cost = 10
+		
+		search_filters = {FOCUS_FILTER_BALANCE_OF_POWER}
+
+		completion_reward = {
+			army_experience = 25	
+		}
+	}
+	focus = {
+		id = MLY_the_marleyean_airforce
+		icon = GFX_focus_ETH_the_ethiopian_air_force
+		prerequisite = { focus = MLY_expand_the_military }
+
+		x = 0 
+		y = 1
+		relative_position_id = MLY_expand_the_military
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 1.25
+			}
+		}
+
+		search_filters = {FOCUS_FILTER_AIR_XP}
+
+		completion_reward = {
+			air_experience = 15
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = MLY_the_marleyean_shield
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = MLY_expand_the_military }
+
+		x = -8
+		y = 1
+		relative_position_id = MLY_expand_the_military
+		cost = 10
+		available = {
+			any_controlled_state = {
+				is_coastal = yes
+			}
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			random_controlled_state = {
+				limit = { 
+					is_coastal = yes 
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+
+				IF = {
+					limit = { naval_base < 8 }
+					add_building_construction = {
+						type = naval_base
+						level = 1
+						instant_build = yes
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+						    }
+					}
+				}
+				IF = {
+					limit = { 
+						dockyard < 8
+					}
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = MLY_home_defense
+		 icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = MLY_the_marleyean_spear }
+
+		x = -6
+		y = 1
+		relative_position_id = MLY_the_marleyean_spear
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 1.25
+				has_war = yes 
+			}
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			army_experience = 50
+		}
+	}
+	focus = {
+		id = MLY_tactical_officer_training
+		 icon = GFX_focus_eng_special_air_service
+		prerequisite = { focus = MLY_the_marleyean_spear }
+
+		x = 0
+		y = 1
+		relative_position_id = MLY_the_marleyean_spear
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 1.25
+				has_war = yes 
+			}
+		}
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = MLY_no_stone_left_unturned
+		icon = GFX_focus_ETH_peacekeeping_forces
+		prerequisite = { focus = MLY_the_marleyean_spear }
+
+		x = 4
+		y = 1
+		relative_position_id = MLY_the_marleyean_spear
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 0.5 
+			}
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = MLY_nationalistic_army
+		}
+	}
+	focus = {
+		id = MLY_small_arms_modernization
+		 icon = GFX_goal_panzerwaffe
+		prerequisite = { focus = MLY_home_defense }
+
+		x = -2
+		y = 1
+		relative_position_id = MLY_home_defense
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 0.5
+			modifier = {
+				factor = 2
+				has_war = yes 
+			}
+		}
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MLY_small_arms_modernization
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons	
+			}
+		}
+	}
+	focus = {
+		id = MLY_motorized_warfare
+		 icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = MLY_home_defense }
+
+		x = 0
+		y = 1
+		relative_position_id = MLY_home_defense
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 0.5
+			modifier = {
+				factor = 2
+				has_war = yes 
+			}
+		}
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 3.0
+				technology = motorised_infantry	
+			}
+		}
+	}
+	focus = {
+		id = MLY_preparing_for_the_inevitable
+		prerequisite = { focus = MLY_home_defense}
+		relative_position_id = MLY_home_defense
+		x = 2
+		y = 1
+		icon = GFX_goal_generic_fortify_city
+		cost = 10
+		available = {}
+		
+		search_filters = {}
+
+		completion_reward = {
+			add_war_support = 0.1
+			every_owned_state = {
+				limit = {
+					is_capital = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = {
+						id = 5010
+					}
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_ideas = MLY_prepare_for_the_inevitable_idea
+		}
+	}
+	focus = {
+		id = MLY_modern_artillery
+		prerequisite = { focus = MLY_small_arms_modernization}
+		relative_position_id = MLY_small_arms_modernization
+		x = 0
+		y = 1
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10
+		available = {}
+		
+		search_filters = {}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MLY_modern_artillery
+				bonus = 1.0
+				uses = 2
+				category = artillery	
+			}
+		}
+	}
+	focus = {
+		id = MLY_defend_our_sky's
+		prerequisite = { focus = MLY_preparing_for_the_inevitable}
+		relative_position_id = MLY_preparing_for_the_inevitable
+		x = 0
+		y = 1
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10
+		available = {}
+		
+		search_filters = {}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = MLY_modern_anti_air
+				bonus = 1.0
+				uses = 2
+				category = cat_anti_air	
+			}
+		}
+	}
+	focus = {
+		id = MLY_mechanized_warfare
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = MLY_motorized_warfare focus = MLY_modern_artillery focus = MLY_defend_our_sky's}
+		x = 0
+		y = 2
+		relative_position_id = MLY_motorized_warfare
+		cost = 10
+		
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+	focus = {
+		id = MLY_armored_warfare
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = MLY_mechanized_warfare}
+		x = 0
+		y = 1
+		relative_position_id = MLY_mechanized_warfare
+		cost = 10
+		
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+		}
+	}
+	focus = {
+		id = MLY_junior_officer_corps
+		 icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = MLY_tactical_officer_training }
+
+		x = -1
+		y = 1
+		relative_position_id = MLY_tactical_officer_training
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 1
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			army_experience = 50
+		}
+	}
+	focus = {
+		id = MLY_camouflage
+		 icon = GFX_focus_prc_infiltration
+		prerequisite = { focus = MLY_tactical_officer_training }
+
+		x = 1
+		y = 1
+		relative_position_id = MLY_tactical_officer_training
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 1.25
+				has_war = yes 
+			}
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			custom_effect_tooltip = ETH_camouflage_army_tt
+			custom_effect_tooltip = ETH_camouflage_air_tt
+			add_to_variable = { ETH_airforce_enemy_army_bonus_air_superiority_factor = -0.15 } 
+		}
+	}
+	focus = {
+		id = MLY_new_weapons_and_tactics
+		 icon = GFX_focus_generic_combined_arms
+		prerequisite = { focus = MLY_junior_officer_corps focus = MLY_camouflage }
+		
+		x = 0
+		y = 1
+		relative_position_id = MLY_junior_officer_corps
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 1
+			}
+		}
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = ETH_new_weapons_and_tactics_bonus
+				bonus = 0.5
+				uses = 4
+				category = infantry_weapons
+				category = armor
+				category = artillery
+			}
+		}
+		
+	focus = {
+		id = MLY_old_reliable
+		 icon = GFX_focus_secret_rearmament
+		prerequisite = { focus = MLY_camouflage focus = MLY_junior_officer_corps }
+	
+		x = 0
+		y = 1
+		relative_position_id = MLY_camouflage
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 1
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			custom_effect_tooltip = ETH_old_reliable_tt
+			add_to_variable = { ETH_army_max_dig_in_factor = 0.5 }
+			add_to_variable = { ETH_army_dig_in_speed_factor = 0.25 }
+			add_to_variable = { ETH_army_modifier_army_sub_unit_infantry_attack_factor = 0.05 }
+			add_to_variable = { ETH_army_modifier_army_sub_unit_infantry_defence_factor = 0.1 }
+			add_to_variable = { ETH_army_modifier_army_sub_unit_infantry_speed_factor = 0.1 }
+			ETH_improve_army_spirit_effect = yes # increase bling value
+		}
+	}
+	focus = {
+		id = MLY_heroic_war_heroes
+		 icon = GFX_focus_ETH_promote_the_war_heroes
+		prerequisite = { focus = MLY_new_weapons_and_tactics focus = MLY_old_reliable }
+	
+		x = 0
+		y = 1
+		relative_position_id = MLY_new_weapons_and_tactics
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 1
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			custom_effect_tooltip = ETH_old_reliable_tt
+			add_to_variable = { ETH_army_max_dig_in_factor = 0.5 }
+			add_to_variable = { ETH_army_dig_in_speed_factor = 0.25 }
+			add_to_variable = { ETH_army_modifier_army_sub_unit_infantry_attack_factor = 0.05 }
+			add_to_variable = { ETH_army_modifier_army_sub_unit_infantry_defence_factor = 0.1 }
+			add_to_variable = { ETH_army_modifier_army_sub_unit_infantry_speed_factor = 0.1 }
+			ETH_improve_army_spirit_effect = yes # increase bling value
+		}
+	}
+	focus = {
+		id = MLY_the_common_soldier
+		 icon = GFX_focus_generic_manpower
+		prerequisite = { focus = MLY_old_reliable focus = MLY_new_weapons_and_tactics }
+	
+		x = 0
+		y = 1
+		relative_position_id =MLY_old_reliable
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 1
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_war_support = 0.1
+			add_stability = 0.1
+			every_army_leader = {
+			add_unit_leader_trait = MLY_hero_of_marley
+			}
+		}
+	}
+	focus = {
+		id = MLY_use_the_marleyeans
+		icon = GFX_focus_ETH_peacekeeping_forces
+		prerequisite = { focus = MLY_no_stone_left_unturned }
+
+		x = 0
+		y = 1
+		relative_position_id = MLY_no_stone_left_unturned
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 0.5 
+			}
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = MLY_nationalistic_army
+		}
+	}
+	focus = {
+		id = MLY_use_no_retreat
+		icon = GFX_focus_ETH_peacekeeping_forces
+		prerequisite = { focus = MLY_use_the_marleyeans }
+
+		x = 0
+		y = 1
+		relative_position_id = MLY_use_the_marleyeans
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 0.5 
+			}
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = MLY_nationalistic_army
+		}
+	}
+	focus = {
+		id = MLY_we_are_marley
+		icon = GFX_focus_ETH_peacekeeping_forces
+		prerequisite = { focus = MLY_use_no_retreat}
+
+		x = 0
+		y = 1
+		relative_position_id = MLY_use_no_retreat
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 0.5 
+			}
+		}
+
+		search_filters = {}
+
+		completion_reward = {
+			add_ideas = MLY_nationalistic_army
+		}
+	}
+	focus = {
+		id = MLY_airship_supremacy
+		icon = GFX_focus_ETH_the_ethiopian_air_force
+		prerequisite = { focus = MLY_the_marleyean_airforce }
+
+		x = 0 
+		y = 1
+		relative_position_id = MLY_the_marleyean_airforce
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 1.25
+			}
+		}
+
+		search_filters = {FOCUS_FILTER_AIR_XP}
+
+		completion_reward = {
+			air_experience = 15
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = MLY_expand_the_airship_industry
+		icon = GFX_focus_ETH_the_ethiopian_air_force
+		prerequisite = { focus = MLY_airship_supremacy }
+
+		x = 0 
+		y = 1
+		relative_position_id = MLY_airship_supremacy
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 1.25
+			}
+		}
+
+		search_filters = {FOCUS_FILTER_AIR_XP}
+
+		completion_reward = {
+			air_experience = 15
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = MLY_modernize_airship_industry
+		icon = GFX_focus_ETH_the_ethiopian_air_force
+		prerequisite = { focus = MLY_expand_the_airship_industry }
+
+		x = -2
+		y = 1
+		relative_position_id = MLY_expand_the_airship_industry
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 1.25
+			}
+		}
+
+		search_filters = {FOCUS_FILTER_AIR_XP}
+
+		completion_reward = {
+			air_experience = 15
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = MLY_modernize_ground_support
+		icon = GFX_focus_ETH_the_ethiopian_air_force
+		prerequisite = { focus = MLY_expand_the_airship_industry }
+
+		x = 0
+		y = 1
+		relative_position_id = MLY_expand_the_airship_industry
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 1.25
+			}
+		}
+
+		search_filters = {FOCUS_FILTER_AIR_XP}
+
+		completion_reward = {
+			air_experience = 15
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = MLY_modernize_long_range_airships
+		icon = GFX_focus_ETH_the_ethiopian_air_force
+		prerequisite = { focus = MLY_expand_the_airship_industry }
+
+		x = 2
+		y = 1
+		relative_position_id = MLY_expand_the_airship_industry
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 1.25
+			}
+		}
+
+		search_filters = {FOCUS_FILTER_AIR_XP}
+
+		completion_reward = {
+			air_experience = 15
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+
+	
+	############################### 
+	######## HOMELAND DEV: ######## 
+	
+	focus = {
+		id = MLY_homeland_development 
+		icon = GFX_focus_generic_military_academy
+		#icon = GFX_goal_generic_allies_build_infantry
+		#relative_position_id = RSS_sample_tree_sect_center
+		#prerequisite = { focus = RSS_sample_tree_sect_center }
+		#mutually_exclusive = { 
+			#focus = RSS_EXAMP1 
+			#focus = RSS_EXAMP2 
+		#}
+		x = 30
+		y = 0
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 100 
+		}
+		
+	}
+	
+	##### 
+	
+	focus = {
+		id = MLY_economic_development_plan
+		icon = GFX_goal_generic_construct_civilian 
+		relative_position_id = MLY_homeland_development 
+		prerequisite = { focus = MLY_homeland_development } 
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 9
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 2
+				category = industry	
+			}
+			add_timed_idea =  {
+				idea = MLY_civilian_investments
+				days = 730
+			}
+		}
+	}
+
+	focus = {
+		id = MLY_civilian_investments
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = MLY_economic_development_plan }
+		relative_position_id = MLY_economic_development_plan
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		x = 0
+		y = 1
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+	    }
+	}
+
+	focus = {
+		id = MLY_agricultural_development
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = MLY_civilian_investments}
+		relative_position_id = MLY_civilian_investments
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = MLY_extra_tech_slot
+		icon = GFX_focus_research
+		prerequisite = { focus = MLY_agricultural_development}
+		prerequisite = { focus = MLY_excavation_efforts}
+		relative_position_id = MLY_agricultural_development
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+       x = 2
+	   y = 1
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = MLY_basic_infrastructure_development
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = MLY_economic_development_plan }
+		relative_position_id = MLY_economic_development_plan
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		x = -2
+		y = 1
+		available = {
+			OR = {
+				has_full_control_of_state = 53
+				has_full_control_of_state = 54
+				has_full_control_of_state = 55
+				has_full_control_of_state = 56
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+				53 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+						add_extra_state_shared_building_slots = 2
+					}
+				}
+				54 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+						add_extra_state_shared_building_slots = 2
+					}
+				}
+				55 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+						add_extra_state_shared_building_slots = 2
+					}
+				}
+				56 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+						add_extra_state_shared_building_slots = 2
+					}
+				}
+				
+		}
+	}
+
+	focus = {
+		id = MLY_military_production
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = MLY_economic_development_plan }
+		relative_position_id = MLY_economic_development_plan
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		x = 2
+		y = 1
+		available_if_capitulated = no
+		available = {
+			has_war_support > 0.49
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	############################### 
+	######## THE AMERICAS: ######## 
+	
+	focus = {
+		id = MLY_a_new_world_west 
+		icon = GFX_focus_ETH_keep_the_chitet
+		#icon = GFX_goal_generic_allies_build_infantry
+		#relative_position_id = RSS_sample_tree_sect_center
+		#prerequisite = { focus = RSS_sample_tree_sect_center }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = 36
+		y = 0
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 10 
+		}
+		
+	}
+	
+	focus = {
+		id = MLY_excavation_efforts
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = MLY_a_new_world_west } 
+		relative_position_id = MLY_a_new_world_west 
+		cost = 10
+		ai_will_do = {
+			factor = 4
+		}
+		x = 0
+		y = 1
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_tech_bonus = {
+				name = MLY_excavation_bonus
+				bonus = 2.0
+				uses = 3
+				technology = excavation_1
+				technology = excavation_2
+				technology = excavation_3
+				technology = excavation_4
+				technology = excavation_5
+			}
+			add_timed_idea = { 
+				idea = MLY_colonial_excavation_efforts 
+				days = 365 
+			}
+			
+			
+		}
+	}
+
+	focus = {
+		id = MLY_colonial_aluminum_excavation
+		icon = GFX_focus_generic_rubber
+		prerequisite = { focus = MLY_excavation_efforts }
+		relative_position_id = MLY_excavation_efforts
+		cost = 10
+		ai_will_do = {
+			factor = 4
+		}
+		x = 0
+		y = 1
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			random_owned_controlled_state = 
+			{
+				add_resource = {
+					type = aluminium
+							amount = 8
+						}
+			}
+			random_owned_controlled_state = 
+			{
+				add_resource = {
+					type = aluminium
+							amount = 8
+						}
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	############################# 
+	######## TYBUR TREE: ######## 
+	
+	focus = {
+		id = MLY_house_tyber 
+		icon = GFX_focus_ETH_keep_the_chitet
+		#icon = GFX_goal_generic_allies_build_infantry
+		#relative_position_id = RSS_sample_tree_sect_center
+		#prerequisite = { focus = RSS_sample_tree_sect_center }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = 40
+		y = 6
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 100 
+		}
+		
+	}
+	
+	focus = {
+		id = MLY_willy_diplomacy 
+		icon = GFX_focus_ETH_keep_the_chitet 
+		relative_position_id = MLY_house_tyber
+		prerequisite = { focus = MLY_house_tyber }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = -4
+		y = 1
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 100 
+		}
+		
+	}
+	
+	focus = {
+		id = MLY_revisit_hizuru_in_person 
+		icon = GFX_goal_generic_fortify_city 
+		relative_position_id = MLY_willy_diplomacy
+		prerequisite = { focus = MLY_willy_diplomacy }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = 0
+		y = 1
+		cost = 1
+
+		available_if_capitulated = yes 
+
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = MLY_compromise_with_mideast 
+		icon = GFX_goal_generic_fortify_city 
+		relative_position_id = MLY_revisit_hizuru_in_person
+		prerequisite = { focus = MLY_revisit_hizuru_in_person }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = -2
+		y = 1
+		cost = 1
+
+		available_if_capitulated = yes 
+
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = MLY_negotiate_mideast_peace 
+		icon = GFX_goal_generic_fortify_city 
+		relative_position_id = MLY_compromise_with_mideast
+		prerequisite = { focus = MLY_compromise_with_mideast }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = 0 
+		y = 1 
+		cost = 1
+
+		available_if_capitulated = yes 
+
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = MLY_keep_out_foreign_intervention 
+		icon = GFX_goal_generic_fortify_city 
+		relative_position_id = MLY_negotiate_mideast_peace
+		prerequisite = { focus = MLY_negotiate_mideast_peace }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = 0 
+		y = 1 
+		cost = 1
+
+		available_if_capitulated = yes 
+
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = MLY_missions_to_europa 
+		icon = GFX_goal_generic_fortify_city 
+		relative_position_id = MLY_keep_out_foreign_intervention
+		prerequisite = { focus = MLY_keep_out_foreign_intervention }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = 0 
+		y = 1 
+		cost = 1
+
+		available_if_capitulated = yes 
+
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = MLY_oppose_mideast_annexation 
+		icon = GFX_goal_generic_fortify_city 
+		relative_position_id = MLY_missions_to_europa
+		prerequisite = { focus = MLY_missions_to_europa }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = 0 
+		y = 1 
+		cost = 1
+
+		available_if_capitulated = yes 
+
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	
+	
+	focus = {
+		id = MLY_missions_to_hizuru 
+		icon = GFX_goal_generic_fortify_city 
+		relative_position_id = MLY_revisit_hizuru_in_person
+		prerequisite = { focus = MLY_revisit_hizuru_in_person }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = 0
+		y = 1
+		cost = 1
+
+		available_if_capitulated = yes 
+
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	
+	focus = {
+		id = MLY_appeal_to_internationals 
+		icon = GFX_goal_generic_fortify_city 
+		relative_position_id = MLY_willy_diplomacy 
+		prerequisite = { 
+			focus = MLY_willy_diplomacy 
+			focus = MLY_helos_cultural_legacy 
+		}
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = 2
+		y = 1
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		
+	}
+	focus = {
+		id = MLY_promote_new_artstyles 
+		icon = GFX_goal_generic_fortify_city 
+		relative_position_id = MLY_appeal_to_internationals 
+		prerequisite = { 
+			focus = MLY_appeal_to_internationals 
+		}
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = 0
+		y = 1
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	
+	
+	####
+	
+	focus = {
+		id = MLY_helos_cultural_legacy 
+		icon = GFX_focus_ETH_keep_the_chitet 
+		relative_position_id = MLY_house_tyber
+		prerequisite = { focus = MLY_house_tyber }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = 0
+		y = 1
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = MLY_reform_chain_of_command 
+		icon = GFX_focus_ETH_keep_the_chitet 
+		relative_position_id = MLY_helos_cultural_legacy
+		prerequisite = { focus = MLY_helos_cultural_legacy }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = 0
+		y = 1
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = MLY_offer_our_royal_guard 
+		icon = GFX_focus_ETH_keep_the_chitet 
+		relative_position_id = MLY_reform_chain_of_command
+		prerequisite = { focus = MLY_reform_chain_of_command }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = 0
+		y = 3
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = MLY_warhammer_new_vanguard 
+		icon = GFX_focus_ETH_keep_the_chitet 
+		relative_position_id = MLY_offer_our_royal_guard
+		prerequisite = { focus = MLY_offer_our_royal_guard }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = 0
+		y = 2
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	
+	
+	
+	#### 
+	
+	focus = {
+		id = MLY_sinners_in_our_backyard 
+		icon = GFX_focus_ETH_keep_the_chitet 
+		relative_position_id = MLY_house_tyber
+		prerequisite = { focus = MLY_house_tyber }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = 4
+		y = 1
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	
+	focus = {
+		id = MLY_expand_eldian_ghettos 
+		icon = GFX_focus_ETH_keep_the_chitet 
+		relative_position_id = MLY_sinners_in_our_backyard
+		prerequisite = { focus = MLY_sinners_in_our_backyard }
+		mutually_exclusive = { 
+			focus = MLY_negotiate_eldian_rights 
+		}
+		x = 0
+		y = 1
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = MLY_negotiate_eldian_rights 
+		icon = GFX_focus_ETH_keep_the_chitet 
+		relative_position_id = MLY_sinners_in_our_backyard
+		prerequisite = { focus = MLY_sinners_in_our_backyard }
+		mutually_exclusive = { 
+			focus = MLY_expand_eldian_ghettos 
+		}
+		x = 2
+		y = 1
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		
+	}
+	focus = {
+		id = MLY_expand_eldian_employment 
+		icon = GFX_focus_ETH_keep_the_chitet 
+		relative_position_id = MLY_negotiate_eldian_rights
+		prerequisite = { focus = MLY_negotiate_eldian_rights }
+		#mutually_exclusive = { 
+			#focus = MLY_expand_eldian_ghettos 
+		#}
+		x = 0
+		y = 1
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		
+	}
+	focus = {
+		id = MLY_propose_honorary_system 
+		icon = GFX_focus_ETH_keep_the_chitet 
+		relative_position_id = MLY_expand_eldian_employment
+		prerequisite = { focus = MLY_expand_eldian_employment }
+		#mutually_exclusive = { 
+			#focus = MLY_expand_eldian_ghettos 
+		#}
+		x = 0
+		y = 1
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	
+	
+	
+	################################### 
+	######## DIPLOMATIC GOALS: ######## 
+	
+	focus = {
+		id = MLY_a_world_against_us 
+		icon = GFX_focus_ETH_the_ethiopian_air_force 
+		#icon = GFX_goal_generic_allies_build_infantry
+		#relative_position_id = RSS_sample_tree_sect_center
+		#prerequisite = { focus = RSS_sample_tree_sect_center }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = 24
+		y = 7
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 10 
+		}
+		
+	}
+	
+	
+	#### EUROPA #### 
+	
+	focus = {
+		id = MLY_situation_in_europa 
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = MLY_a_world_against_us
+		prerequisite = { focus = MLY_a_world_against_us }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = -5
+		y = 1
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = MLY_a_great_europan_war 
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = MLY_situation_in_europa
+		prerequisite = { focus = MLY_situation_in_europa }
+		x = 0
+		y = 1
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		
+	}
+	focus = {
+		id = MLY_support_atlantic_federation 
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = MLY_a_great_europan_war
+		prerequisite = { focus = MLY_a_great_europan_war }
+		mutually_exclusive = { 
+			focus = MLY_support_east_europa 
+		}
+		x = -1
+		y = 1
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		
+	}
+	focus = {
+		id = MLY_replace_their_federation 
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = MLY_support_atlantic_federation 
+		prerequisite = { focus = MLY_support_atlantic_federation } 
+		#mutually_exclusive = { 
+			#focus = MLY_support_east_europa 
+		#}
+		x = 0
+		y = 4
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#puppet = FRA 
+		}
+		
+	}
+	
+	focus = {
+		id = MLY_support_east_europa 
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = MLY_a_great_europan_war
+		prerequisite = { focus = MLY_a_great_europan_war }
+		mutually_exclusive = { 
+			focus = MLY_support_atlantic_federation 
+		}
+		x = 1
+		y = 1
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	
+	focus = {
+		id = MLY_central_europa_new_eagle 
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = MLY_situation_in_europa
+		prerequisite = { focus = MLY_situation_in_europa }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+		#}
+		x = -3
+		y = 1
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		
+	}
+	focus = {
+		id = MLY_britannia_awakens 
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = MLY_situation_in_europa
+		prerequisite = { focus = MLY_situation_in_europa }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+		#}
+		x = -5
+		y = 1
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		
+	}
+	focus = {
+		id = MLY_medittereanean_resurgence 
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = MLY_situation_in_europa
+		prerequisite = { focus = MLY_situation_in_europa }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+		#}
+		x = -7
+		y = 1
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	
+	
+	
+	focus = {
+		id = MLY_mideast_tensions 
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = MLY_a_world_against_us
+		prerequisite = { focus = MLY_a_world_against_us }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = 0
+		y = 1
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	
+	focus = {
+		id = MLY_suez_crisis 
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = MLY_mideast_tensions
+		prerequisite = { focus = MLY_mideast_tensions }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = 0
+		y = 2
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	
+	focus = {
+		id = MLY_war_in_the_mideast 
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = MLY_suez_crisis
+		prerequisite = { focus = MLY_suez_crisis }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = 0
+		y = 1
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = MLY_byzantium_expedition 
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = MLY_war_in_the_mideast
+		prerequisite = { focus = MLY_war_in_the_mideast }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = -2
+		y = 1
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = MLY_strike_arab_desert 
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = MLY_war_in_the_mideast
+		prerequisite = { focus = MLY_war_in_the_mideast }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = 0
+		y = 1
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = MLY_invade_persia 
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = MLY_war_in_the_mideast
+		prerequisite = { focus = MLY_war_in_the_mideast }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = 2
+		y = 1
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	
+	
+	focus = {
+		id = MLY_oriental_rivals 
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = MLY_a_world_against_us
+		prerequisite = { focus = MLY_a_world_against_us }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = 5
+		y = 1
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = MLY_occupy_zilkistan 
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = MLY_oriental_rivals
+		prerequisite = { focus = MLY_oriental_rivals }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = -2
+		y = 1
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = MLY_exile_qing_opponents 
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = MLY_oriental_rivals
+		prerequisite = { focus = MLY_oriental_rivals }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = 0
+		y = 1
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		
+	}
+	focus = {
+		id = MLY_counter_hizuru_naval_ambitions 
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = MLY_oriental_rivals
+		prerequisite = { focus = MLY_oriental_rivals }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = 3
+		y = 1
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	
+	
+	##################################### 
+	######## INVASION OF PARADIS ######## 
+	
+	focus = {
+		id = MLY_the_island_of_devils 
+		icon = GFX_focus_ETH_keep_the_chitet 
+		#icon = GFX_goal_generic_allies_build_infantry
+		#relative_position_id = MLY_sample_tree_sect_center
+		#prerequisite = { focus = MLY_sample_tree_sect_center }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = 5
+		y = 7
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 10 
+		}
+		
+	}
+	
+	focus = {
+		id = MLY_send_zeke_warriors 
+		icon = GFX_goal_generic_allies_build_infantry 
+		relative_position_id = MLY_the_island_of_devils 
+		prerequisite = { focus = MLY_the_island_of_devils }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = 0
+		y = 1 
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = MLY_audacious_north_strike 
+		icon = GFX_goal_generic_allies_build_infantry 
+		relative_position_id = MLY_send_zeke_warriors 
+		prerequisite = { focus = MLY_send_zeke_warriors }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = -5
+		y = 1 
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = MLY_target_south_shiganshina 
+		icon = GFX_goal_generic_allies_build_infantry 
+		relative_position_id = MLY_send_zeke_warriors 
+		prerequisite = { focus = MLY_send_zeke_warriors }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = 0
+		y = 1 
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	
+	
+	############################################ 
+	######## TYBUR TREE: IF ERWIN LIVES ######## 
+	
+	focus = {
+		id = MLY_erwin_paradis_new_devil 
+		icon = GFX_focus_ETH_keep_the_chitet 
+		relative_position_id = MLY_house_tyber
+		prerequisite = { focus = MLY_house_tyber }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = 12
+		y = 1
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 50 
+		}
+		
+	}
+	
+	focus = {
+		id = MLY_erwin_committed_to_peace 
+		icon = GFX_focus_ETH_keep_the_chitet 
+		relative_position_id = MLY_erwin_paradis_new_devil
+		prerequisite = { focus = MLY_erwin_paradis_new_devil }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = -2
+		y = 1
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = MLY_eldians_in_paradis 
+		icon = GFX_focus_ETH_keep_the_chitet 
+		relative_position_id = MLY_sinners_in_our_backyard
+		prerequisite = { 
+			focus = MLY_erwin_committed_to_peace 
+			focus = MLY_sinners_in_our_backyard 
+		}
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = 4
+		y = 2
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	
+	
+	
+	focus = {
+		id = MLY_erwin_enemy_of_peace 
+		icon = GFX_focus_ETH_keep_the_chitet 
+		relative_position_id = MLY_erwin_paradis_new_devil
+		prerequisite = { focus = MLY_erwin_paradis_new_devil }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = 2
+		y = 1
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	############################################################ 
+	######## TYBUR TREE: IF A NON-PARADIS THREAT ARISES ######## 
+	
+	focus = {
+		id = MLY_a_threat_greater_than_paradis 
+		icon = GFX_focus_ETH_keep_the_chitet 
+		relative_position_id = MLY_house_tyber
+		prerequisite = { focus = MLY_house_tyber }
+		#mutually_exclusive = { 
+			#focus = MLY_EXAMP1 
+			#focus = MLY_EXAMP2 
+		#}
+		x = 20
+		y = 1
+		cost = 1
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 50 
+		}
+		
+	}
+	
+	
+}
+	

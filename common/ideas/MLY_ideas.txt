@@ -1,0 +1,45 @@
+ideas = {
+		country = {
+		
+		
+		MLY_nationalistic_army = { 
+				
+			allowed = {
+				original_tag = MLY
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_reserve_divisions
+				
+			removal_cost = -1
+				
+			modifier = {
+				conscription = 0.002
+			}
+		}
+		MLY_prepare_for_the_inevitable_idea = {
+
+			picture = generic_wall_line
+
+			allowed = {
+				original_tag = MLY
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				production_speed_bunker_factor = 0.1
+				production_speed_coastal_bunker_factor = 0.1
+			}
+		}
+		
+		
+		
+		
+	}
+}
