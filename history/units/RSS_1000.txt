@@ -1,0 +1,93 @@
+﻿division_template = {
+	name = "Test Infantry I"
+	division_names_group = RSS_INFB_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Test Cavalry I"  
+	division_names_group = RSS_CAVB_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Test Militia I"  
+	division_names_group = RSS_MIL_01
+
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+	}
+}
+
+
+units = {
+	
+	division= {	# "1a Brigada de Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9803 # STATE 15th 
+		division_template = "Test Cavalry I"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+	division= {	# "1a Brigada de Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9803 # STATE 15th 
+		division_template = "Test Cavalry I"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+	division= {	# "1a Brigada de Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 9803 # STATE 15th 
+		division_template = "Test Infantry I"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+	
+	
+	
+	
+	##### No Notable Naval Forces ##### 
+}
+
+##### No Notable Air Forces #####
+
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "RSS"
+		}
+		requested_factories = 1
+		progress = 0.50
+		efficiency = 80
+	}
+}
+
