@@ -1,0 +1,130 @@
+﻿l_english:
+ 
+ TST_male_placeholder:0 "Placeholder Male" 
+ TST_female_placeholder:0 "Placeholder Female" 
+ 
+ ############ THE SURVEY CORPS ############ 
+ 
+ SVC_male_placeholder:0 "Survey Recruit" 
+ SVC_female_placeholder:0 "Survey Recruit" 
+ SVC_kare_player:0 "Survey Player" 
+ 
+ #### THE COMMANDING GOATS #### 
+ 
+ SVC_before_the_fall_commander:0 "10th Commander" 
+ SVC_11th_commander:0 "11th Commander" 
+ 
+ SVC_keith_shadis:0 "Keith Shadis" 
+ SVC_erwin_smith:0 "Erwin Smith" 
+ SVC_erwin_smith_recruit:0 "Erwin Smith" 
+ SVC_levi_commander:0 "Levi Ackermann" 
+ SVC_hange_commander:0 "Hange Zoe" 
+ SVC_armin_commander:0 "Armin Arlert" 
+ SVC_floch_commander:0 "Floch Forster" 
+ 
+ #### TEAM MIKE #### 
+	
+ SVC_mike_zacharius:0 "Mike Zacharius" 
+ SVC_nanaba:0 "Nanaba NOSURNAME" 
+ SVC_gelgar:0 "Gelgar NOSURNAME" 
+ SVC_henning:0 "Henning NOSURNAME" 
+ SVC_lynne:0 "Lynne NOSURNAME" 
+ 
+ 
+ #### TEAM HANGE #### 
+ 
+ SVC_hange_zoe_1:0 "Hange Zoe" 
+ SVC_moblit_berner:0 "Moblit Berner" 
+ SVC_nifa:0 "Nifa NOSURNAME" 
+ SVC_abel_goggles:0 "Abel Goggles?" 
+ SVC_sawny_bean:0 "TITAN MEMES" 
+ 
+ #### TEAM LEVI #### 
+ 
+ SVC_levi_ackermann:0 "Levi Ackermann" 
+ SVC_petra_ral:0 "Petra Ral" 
+ SVC_oluo_bozado:0 "Oluo Bozado" 
+ SVC_eld_jinn:0 "Eld Jinn" 
+ SVC_gunther_schultz:0 "Gunther Schultz" 
+ 
+ 
+ #### 104TH CADETS MAIN CHARACTERS #### 
+	
+ SVC_eren_mikasa_armin:0 "EMA - EreMikArm" 
+ SVC_eren_yeager:0 "Eren Yeager" 
+ SVC_mikasa_ackermann:0 "Mikasa Ackermann" 
+ SVC_armin_arlert:0 "Armin Arlert" 
+ 
+ SVC_krista_lenz:0 "Krista Lenz" 
+ SVC_historia_reiss:0 "Historia Reiss" 
+ SVC_ymir_outcast:0 "Ymir Unknown" 
+ SVC_jean_kirstein:0 "Jean Kirstein" 
+ SVC_connie_springer:0 "Connie Springer" 
+ SVC_sasha_braus:0 "Sasha Braus" 
+ SVC_marco_bott:0 "Marco Bott" 
+ 
+ SVC_reiner_braun:0 "Reiner Braun" 
+ SVC_bertolt_hoover:0 "Bertolt Hoover" 
+ SVC_annie_leonhart:0 "Annie Leonhart" 
+ SVC_marcel_galliard:0 "Marcel Galliard" 
+ SVC_porco_galliard:0 "Porco Galliard" 
+ SVC_pieck_finger:0 "Pieck Finger" 
+ 
+ #### 104TH CADETS OTHER #### 
+ 
+ SVC_thomas_wagner:0 "Thomas Wagner" 
+ SVC_mina_carolina:0 "Mina Carolina" 
+ SVC_daz:0 "Daz NOSURNAME" 
+ SVC_samuel_linke_jackson:0 "Samuel Linke-Jackson" 
+ SVC_tom:0 "Tom NOSURNAME" 
+ SVC_hannah_diamant:0 "Hannah Diamant" 
+ SVC_franz_kefka:0 "Franz Kefka" 
+ 
+ 
+ #### OTHER #### 
+ 
+ SVC_shadis_adjutant:0 "Redshirt" 
+ SVC_dieter_ness:0 "Dieter Ness" 
+ SVC_ilse_langnar:0 "Ilse Langnar" 
+ 
+ SVC_flagon_darlett:0 "Flagon Darlett" 
+ SVC_farlan_church:0 "Farlan Church" 
+ SVC_isabel_magnolia:0 "Isabel Magnolia" 
+ 
+ 
+ 
+ #### OTHER CORPS IMPORTS #### 
+ 
+ SVC_lobov_garisson:0 "Lobov NOSURNAME" 
+ SVC_marlowe_freudenberg:0 "Marlowe Freudenberg" 
+ SVC_hitch_dreyse:0 "Hitch Dreyse" 
+ SVC_dot_pixis:0 "Dot Pixis" 
+ 
+ #### FUTURE YEAGERISTS #### 
+ 
+ SVC_floch_forster:0 "Floch Forster" 
+ SVC_floch_forster_2:0 "Floch Forster" 
+ 
+ SVC_eren_yeager_leader:0 "EREN YEAGER" 
+ 
+ SVC_louise:0 "Louise NOSURNAME" 
+ SVC_holger:0 "Holger NOSURNAME" 
+ SVC_wim:0 "Wim NOSURNAME" 
+ SVC_surma:0 "Surma NOSURNAME" 
+ 
+ 
+ ############ THE GARRISON CORPS ############ 
+ 
+ ############ THE MILITARY POLICE ############ 
+ 
+ ############ THE YEAGERISTS ############ 
+ 
+ ############ THE PEOPLE ############ 
+ 
+ # { ############ REISS HAVE THEIR OWN FILE ############ } # 
+ 
+ #generic_communist_revolutionary:0 "Communist Politician"
+ #generic_democratic_reformer:0 "Democratic Politician"
+ #generic_fascist_demagogue:0 "Fascist Politician"
+ 
+ 
