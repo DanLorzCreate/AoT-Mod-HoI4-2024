@@ -1,0 +1,742 @@
+characters = { 
+	
+	SVC_male_placeholder = {
+		name = SVC_male_placeholder
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_placeholder_small" 
+				large = "GFX_portrait_SVC_placeholder"
+			}
+		}
+		#country_leader = { } 
+		#advisor = { } 
+		#field_marshal = { } 
+		#corps_commander = { } 
+		#navy_leader = { } 
+		#allowed_civil_war = { } 
+		
+	}
+	SVC_female_placeholder = {
+		name = SVC_female_placeholder
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_female_small" 
+				large = "GFX_portrait_SVC_female"
+			}
+		}
+		#country_leader = { } 
+		#advisor = { } 
+		#field_marshal = { } 
+		#corps_commander = { } 
+		#navy_leader = { } 
+		#allowed_civil_war = { } 
+		
+	}
+	
+	SVC_kare_player = {
+		name = SVC_kare_player
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_kare_player_small" 
+				large = "GFX_portrait_SVC_kare_player"
+			}
+		}
+		
+	}
+	
+	#### THE COMMANDING GOATS #### 
+	
+	SVC_before_the_fall_commander = {
+		name = SVC_before_the_fall_commander
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_before_the_fall_commander_small" 
+				large = "GFX_portrait_SVC_before_the_fall_commander"
+			}
+		}
+		
+	}
+	
+	SVC_11th_commander = {
+		name = SVC_11th_commander
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_11th_commander_small" 
+				large = "GFX_portrait_SVC_11th_commander"
+			}
+		}
+		
+	}
+	
+	SVC_keith_shadis = {
+		name = SVC_keith_shadis_1 
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_keith_shadis_1_small" 
+				large = "GFX_portrait_SVC_keith_shadis_1"
+			}
+		}
+		
+	}
+	SVC_erwin_smith = {
+		name = SVC_erwin_smith_1 
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_erwin_smith_1_small" 
+				large = "GFX_portrait_SVC_erwin_smith_1"
+			}
+		}
+		
+	}
+	SVC_erwin_smith_recruit = {
+		name = SVC_erwin_smith_0 
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_erwin_smith_0_small" 
+				large = "GFX_portrait_SVC_erwin_smith_0"
+			}
+		}
+		
+	}
+	SVC_levi_commander = {
+		name = SVC_levi_commander 
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_levi_commander_small" 
+				large = "GFX_portrait_SVC_levi_commander"
+			}
+		}
+		
+	}
+	SVC_hange_commander = {
+		name = SVC_hange_commander 
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_hange_commander_small" 
+				large = "GFX_portrait_SVC_hange_commander"
+			}
+		}
+		
+	}
+	SVC_armin_commander = {
+		name = SVC_armin_commander 
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_armin_commander_small" 
+				large = "GFX_portrait_SVC_armin_commander"
+			}
+		}
+		
+	}
+	SVC_floch_commander = {
+		name = SVC_floch_commander 
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_floch_commander_small" 
+				large = "GFX_portrait_SVC_floch_commander"
+			}
+		}
+		
+	}
+	
+	#### TEAM MIKE #### 
+	
+	SVC_mike_zacharius = {
+		name = SVC_mike_zacharius
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_mike_zacharius_small" 
+				large = "GFX_portrait_SVC_mike_zacharius"
+			}
+		}
+		
+	}
+	SVC_nanaba = {
+		name = SVC_nanaba
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_nanaba_small" 
+				large = "GFX_portrait_SVC_nanaba"
+			}
+		}
+		
+	}
+	SVC_gelgar = {
+		name = SVC_gelgar
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_gelgar_small" 
+				large = "GFX_portrait_SVC_gelgar"
+			}
+		}
+		
+	}
+	SVC_henning = {
+		name = SVC_henning
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_henning_small" 
+				large = "GFX_portrait_SVC_henning"
+			}
+		}
+		
+	}
+	SVC_lynne = {
+		name = SVC_lynne
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_lynne_small" 
+				large = "GFX_portrait_SVC_lynne"
+			}
+		}
+		
+	}
+	
+	
+	#### TEAM HANGE #### 
+	
+	SVC_hange_zoe_1 = {
+		name = SVC_hange_zoe_1
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_hange_zoe_1_small" 
+				large = "GFX_portrait_SVC_hange_zoe_1"
+			}
+		}
+		
+	}
+	SVC_moblit_berner = {
+		name = SVC_moblit_berner
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_moblit_berner_small" 
+				large = "GFX_portrait_SVC_moblit_berner"
+			}
+		}
+		
+	}
+	SVC_nifa = {
+		name = SVC_nifa
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_nifa_small" 
+				large = "GFX_portrait_SVC_nifa"
+			}
+		}
+		
+	}
+	SVC_abel_goggles = {
+		name = SVC_abel_goggles
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_abel_goggles_small" 
+				large = "GFX_portrait_SVC_abel_goggles"
+			}
+		}
+		
+	}
+	
+	SVC_sawny_bean = {
+		name = SVC_sawny_bean
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_sawny_bean_small" 
+				large = "GFX_portrait_SVC_sawny_bean"
+			}
+		}
+		
+	}
+	
+	
+	#### TEAM LEVI #### 
+	
+	SVC_levi_ackermann = {
+		name = SVC_levi_ackermann_1 
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_levi_ackermann_1_small" 
+				large = "GFX_portrait_SVC_levi_ackermann_1"
+			}
+		}
+		
+	}
+	
+	SVC_petra_ral = {
+		name = SVC_petra_ral
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_petra_ral_small" 
+				large = "GFX_portrait_SVC_petra_ral"
+			}
+		}
+		
+	}
+	SVC_oluo_bozado = {
+		name = SVC_oluo_bozado
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_oluo_bozado_small" 
+				large = "GFX_portrait_SVC_oluo_bozado"
+			}
+		}
+		
+	}
+	SVC_eld_jinn = {
+		name = SVC_eld_jinn
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_eld_jinn_small" 
+				large = "GFX_portrait_SVC_eld_jinn"
+			}
+		}
+		
+	}
+	SVC_gunther_schultz = {
+		name = SVC_gunther_schultz
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_gunther_schultz_small" 
+				large = "GFX_portrait_SVC_gunther_schultz"
+			}
+		}
+		
+	}
+	
+	
+	
+	#### 104TH CADETS MAIN CHARACTERS #### 
+	
+	SVC_eren_mikasa_armin = {
+		name = SVC_eren_mikasa_armin
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_eren_mikasa_armin_small" 
+				large = "GFX_portrait_SVC_eren_mikasa_armin"
+			}
+		}
+		
+	}
+	
+	SVC_eren_yeager = {
+		name = SVC_eren_yeager
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_eren_yeager_small" 
+				large = "GFX_portrait_SVC_eren_yeager"
+			}
+		}
+		
+	}
+	SVC_mikasa_ackermann = {
+		name = SVC_mikasa_ackermann
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_mikasa_ackermann_small" 
+				large = "GFX_portrait_SVC_mikasa_ackermann"
+			}
+		}
+		
+	}
+	SVC_armin_arlert = {
+		name = SVC_armin_arlert
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_armin_arlert_small" 
+				large = "GFX_portrait_SVC_armin_arlert"
+			}
+		}
+		
+	}
+	SVC_krista_lenz = {
+		name = SVC_krista_lenz
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_krista_lenz_small" 
+				large = "GFX_portrait_SVC_krista_lenz"
+			}
+		}
+		
+	}
+	SVC_historia_reiss = {
+		name = SVC_historia_reiss
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_historia_reiss_small" 
+				large = "GFX_portrait_SVC_historia_reiss"
+			}
+		}
+		
+	}
+	SVC_ymir_outcast = {
+		name = SVC_ymir_outcast
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_ymir_outcast_small" 
+				large = "GFX_portrait_SVC_ymir_outcast"
+			}
+		}
+		
+	}
+	
+	SVC_jean_kirstein = {
+		name = SVC_jean_kirstein
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_jean_kirstein_small" 
+				large = "GFX_portrait_SVC_jean_kirstein"
+			}
+		}
+		
+	}
+	SVC_connie_springer = {
+		name = SVC_connie_springer
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_connie_springer_small" 
+				large = "GFX_portrait_SVC_connie_springer"
+			}
+		}
+		
+	}
+	SVC_sasha_braus = {
+		name = SVC_sasha_braus
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_sasha_braus_small" 
+				large = "GFX_portrait_SVC_sasha_braus"
+			}
+		}
+		
+	}
+	SVC_marco_bott = {
+		name = SVC_marco_bott
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_marco_bott_small" 
+				large = "GFX_portrait_SVC_marco_bott"
+			}
+		}
+		
+	}
+	
+	
+	SVC_reiner_braun = {
+		name = SVC_reiner_braun
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_reiner_braun_small" 
+				large = "GFX_portrait_SVC_reiner_braun"
+			}
+		}
+		
+	}
+	SVC_bertolt_hoover = {
+		name = SVC_bertolt_hoover
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_bertolt_hoover_small" 
+				large = "GFX_portrait_SVC_bertolt_hoover"
+			}
+		}
+		
+	}
+	
+	SVC_annie_leonhart = {
+		name = SVC_character_placeholder
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_annie_leonhart_small" 
+				large = "GFX_portrait_SVC_annie_leonhart"
+			}
+		}
+		
+	}
+	SVC_marcel_galliard = {
+		name = SVC_marcel_galliard
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_marcel_galliard_small" 
+				large = "GFX_portrait_SVC_marcel_galliard"
+			}
+		}
+		
+	}
+	
+	#### 104TH CADETS OTHER #### 
+	
+	SVC_thomas_wagner = {
+		name = SVC_thomas_wagner
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_thomas_wagner_small" 
+				large = "GFX_portrait_SVC_thomas_wagner"
+			}
+		}
+		
+	}
+	SVC_mina_carolina = {
+		name = SVC_mina_carolina
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_mina_carolina_small" 
+				large = "GFX_portrait_SVC_mina_carolina"
+			}
+		}
+		
+	}
+	
+	SVC_daz = {
+		name = SVC_daz
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_daz_small" 
+				large = "GFX_portrait_SVC_daz"
+			}
+		}
+		
+	}
+	SVC_samuel_linke_jackson = {
+		name = SVC_samuel_linke_jackson
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_samuel_linke_jackson_small" 
+				large = "GFX_portrait_SVC_samuel_linke_jackson"
+			}
+		}
+		
+	}
+	SVC_tom = {
+		name = SVC_tom
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_tom_small" 
+				large = "GFX_portrait_SVC_tom"
+			}
+		}
+		
+	}
+	
+	SVC_hannah_diamant = {
+		name = SVC_hannah_diamant
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_hannah_diamant_small" 
+				large = "GFX_portrait_SVC_hannah_diamant"
+			}
+		}
+		
+	}
+	SVC_franz_kefka = {
+		name = SVC_franz_kefka
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_franz_kefka_small" 
+				large = "GFX_portrait_SVC_franz_kefka"
+			}
+		}
+		
+	}
+	
+	
+	#### OTHER #### 
+	
+	SVC_shadis_adjutant = {
+		name = SVC_shadis_adjutant
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_shadis_adjutant_small" 
+				large = "GFX_portrait_SVC_shadis_adjutant"
+			}
+		}
+		
+	}
+	SVC_dieter_ness = {
+		name = SVC_dieter_ness
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_dieter_ness_small" 
+				large = "GFX_portrait_SVC_dieter_ness"
+			}
+		}
+		
+	}
+	SVC_ilse_langnar = {
+		name = SVC_ilse_langnar
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_ilse_langnar_small" 
+				large = "GFX_portrait_SVC_ilse_langnar"
+			}
+		}
+		
+	}
+	
+	SVC_flagon_darlett = {
+		name = SVC_flagon_darlett
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_flagon_darlett_small" 
+				large = "GFX_portrait_SVC_flagon_darlett"
+			}
+		}
+		
+	}
+	SVC_farlan_church = {
+		name = SVC_farlan_church
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_farlan_church_small" 
+				large = "GFX_portrait_SVC_farlan_church"
+			}
+		}
+		
+	}
+	SVC_isabel_magnolia = {
+		name = SVC_isabel_magnolia
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_isabel_magnolia_small" 
+				large = "GFX_portrait_SVC_isabel_magnolia"
+			}
+		}
+		
+	}
+	
+	
+	
+	#### OTHER CORPS IMPORTS #### 
+	
+	SVC_lobov_garisson = {
+		name = SVC_lobov_garisson
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_lobov_garisson_small" 
+				large = "GFX_portrait_SVC_lobov_garisson"
+			}
+		}
+		
+	}
+	
+	SVC_marlowe_freudenberg = {
+		name = SVC_marlowe_freudenberg
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_marlowe_freudenberg_small" 
+				large = "GFX_portrait_SVC_marlowe_freudenberg"
+			}
+		}
+		
+	}
+	SVC_hitch_dreyse = {
+		name = SVC_hitch_dreyse
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_hitch_dreyse_small" 
+				large = "GFX_portrait_SVC_hitch_dreyse"
+			}
+		}
+		
+	}
+	SVC_dot_pixis = {
+		name = SVC_hitch_dreyse
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_dot_pixis_small" 
+				large = "GFX_portrait_SVC_dot_pixis"
+			}
+		}
+		
+	}
+	
+	#### FUTURE YEAGERISTS #### 
+	
+	SVC_floch_forster = {
+		name = SVC_floch_forster_1
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_floch_forster_1_small" 
+				large = "GFX_portrait_SVC_floch_forster_1"
+			}
+		}
+		
+	}
+	SVC_floch_forster_2 = {
+		name = SVC_floch_forster_2
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_floch_forster_2_small" 
+				large = "GFX_portrait_SVC_floch_forster_2"
+			}
+		}
+		
+	}
+	
+	SVC_eren_yeager_leader = {
+		name = SVC_eren_yeager_leader
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_eren_yeager_leader_small" 
+				large = "GFX_portrait_SVC_eren_yeager_leader"
+			}
+		}
+		
+	}
+	
+	SVC_louise = {
+		name = SVC_louise
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_louise_small" 
+				large = "GFX_portrait_SVC_louise"
+			}
+		}
+		
+	}
+	SVC_holger = {
+		name = SVC_holger
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_holger_small" 
+				large = "GFX_portrait_SVC_holger"
+			}
+		}
+		
+	}
+	
+	SVC_wim = {
+		name = SVC_wim
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_wim_small" 
+				large = "GFX_portrait_SVC_wim"
+			}
+		}
+		
+	}
+	SVC_surma = {
+		name = SVC_surma
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_surma_small" 
+				large = "GFX_portrait_SVC_surma"
+			}
+		}
+		
+	}
+	
+	
+	
+	#SVC_character_placeholder = { 
+	#	name = SVC_character_placeholder 
+	#	portraits = { 
+	#		army = { 
+	#			small = "GFX_portrait_SVC_placeholder_small" 
+	#			large = "GFX_portrait_SVC_placeholder" 
+	#		} 
+	#	} 
+	#	 
+	#} 
+	
+	
+	
+) 
