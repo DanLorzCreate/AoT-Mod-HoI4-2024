@@ -12,6 +12,6 @@ state={
 	history={
 		owner = RSS 
 		#victory_points = { 1 0 } #NoName 
-		
+		add_core_of = RSS 
 	}
 }

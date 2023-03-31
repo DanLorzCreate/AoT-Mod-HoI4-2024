@@ -4,7 +4,7 @@ state={
 	provinces={
 		7542 7543 7572 7589 7612 7628 7660 7680 7707 7718 9789 9790 9791 9792 9793 9794 9795 9796 9797 9798 9799 9800 9801 9802 9803 9804 
 	}
-	manpower=1045
+	manpower=511045
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 	state_category = town   
@@ -12,6 +12,6 @@ state={
 	history={
 		owner = SVC 
 		#victory_points = { 1 0 } #NoName 
-		
+		#add_core_of = SVC 
 	}
 }

@@ -12,6 +12,6 @@ state={
 	history={
 		owner = SVC 
 		#victory_points = { 1 0 } #NoName 
-		
+		#add_core_of = SVC 
 	}
 }

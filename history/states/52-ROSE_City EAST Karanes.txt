@@ -4,7 +4,7 @@ state={
 	provinces={
 		8140 8157 8166 8198 8221 8245 8255 9909 9910 9911 9912 9913 9914 9915 9916 9917 9918 9919 9920 
 	}
-	manpower=1052
+	manpower=11052
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 	state_category = town   
@@ -12,6 +12,6 @@ state={
 	history={
 		owner = GRC 
 		#victory_points = { 1 0 } #NoName 
-		
+		#add_core_of = GRC 
 	}
 }

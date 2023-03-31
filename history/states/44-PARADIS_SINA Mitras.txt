@@ -4,7 +4,7 @@ state={
 	provinces={
 		8491 9813 9814 9815 9816 
 	}
-	manpower=1044
+	manpower=11044
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 	state_category = town   
@@ -12,7 +12,8 @@ state={
 	history={
 		owner = RSS 
 		victory_points = { 8491 10 } #NoName 
-		
+		#add_core_of = RSS 
 	}
+
 }
-#23
+#
