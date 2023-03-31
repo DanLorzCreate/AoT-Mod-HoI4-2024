@@ -1,22 +1,26 @@
 capital = 44
 
 set_research_slots = 1 
-set_stability = 0.5 
-set_war_support = 0.5 
+set_stability = 0.6 
+set_war_support = 0.3 
 add_political_power = 150 
 add_command_power = 5 
 set_fuel_ratio = 0.1 
 set_convoys = 10
 
-#oob = "RSS_2000"
+OOB = "RSS_1000" 
+add_manpower = 2000 
 
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
 }
 
-#create_faction = EMPIRE_SADERA 
-#add_to_faction = EMP 
+create_faction = KINGDOM_OF_WALLS 
+add_to_faction = RSS 
+add_to_faction = SVC 
+add_to_faction = GRC 
+add_to_faction = MYP 
 #puppet = SVC 
 #puppet = GRC 
 #puppet = MYP 
@@ -24,6 +28,7 @@ set_technology = {
 add_ideas = {
 		RSS_protected_by_the_walls
 	}
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
