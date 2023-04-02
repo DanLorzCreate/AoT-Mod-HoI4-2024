@@ -12,6 +12,6 @@ state={
 	history={
 		owner = MYP 
 		#victory_points = { 1 0 } #NoName 
-		
+		  
 	}
 }

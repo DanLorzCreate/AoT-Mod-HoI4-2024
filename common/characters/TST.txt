@@ -1,0 +1,37 @@
+characters = { 
+	
+	TST_male_placeholder = {
+		name = TST_male_placeholder
+		portraits = {
+			army = {
+				small = "GFX_portrait_placeholder_small" 
+				large = "GFX_portrait_placeholder"
+			}
+		}
+		#country_leader = { } 
+		#advisor = { } 
+		#field_marshal = { } 
+		#corps_commander = { } 
+		#navy_leader = { } 
+		#allowed_civil_war = { } 
+		
+	}
+	TST_female_placeholder = {
+		name = TST_female_placeholder
+		portraits = {
+			army = {
+				small = "GFX_portrait_female_small" 
+				large = "GFX_portrait_female"
+			}
+		}
+		#country_leader = { } 
+		#advisor = { } 
+		#field_marshal = { } 
+		#corps_commander = { } 
+		#navy_leader = { } 
+		#allowed_civil_war = { } 
+		
+	}
+	
+	
+) 

@@ -8,4 +8,9 @@ state={
 	buildings_max_level_factor=1.000
 	local_supplies=0.000 
 state_category = wasteland 
+history={
+		owner = MLY 
+		#victory_points = { 1 0 } #NoName 
+		add_core_of = MLY 
+	} 
 }

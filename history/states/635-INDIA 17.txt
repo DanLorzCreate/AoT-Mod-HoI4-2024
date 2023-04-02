@@ -1,0 +1,11 @@
+state={
+	id=635
+	name="STATE_635"
+	provinces={
+		1851 1855 1915 1962 1964 2066 2088 
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000 
+state_category = wasteland 
+}

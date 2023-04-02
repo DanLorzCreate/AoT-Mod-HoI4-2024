@@ -1,0 +1,11 @@
+state={
+	id=535
+	name="STATE_535"
+	provinces={
+		5482 5513 5534 5535 5573 5574 5581 5601 5640 
+	}
+	manpower=100
+	buildings_max_level_factor=1.000
+	local_supplies=0.000 
+state_category = wasteland 
+}
