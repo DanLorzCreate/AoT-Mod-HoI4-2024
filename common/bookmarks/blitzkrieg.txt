@@ -10,7 +10,7 @@ bookmarks = {
 		"TST"={
 			history = "OTHER_GATHERING_STORM_DESC"
 		}
-		"PDS"={
+		"MLY"={
 			history = "OTHER_GATHERING_STORM_DESC"
 		}
 		"RSS"={
