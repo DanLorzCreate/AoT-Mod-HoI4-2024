@@ -1,714 +1,742 @@
-characters={
-	### The King of Bohemia
-	CZE_karl_albrecht = {
-		name=POL_karl_albrecht
+characters = { 
+	
+	SVC_male_placeholder = {
+		name = SVC_male_placeholder
 		portraits = {
-			civilian = {
-				large="GFX_portrait_POL_karl_albrecht"
+			army = {
+				small = "GFX_portrait_SVC_placeholder_small" 
+				large = "GFX_portrait_SVC_placeholder"
 			}
 		}
+		#country_leader = { } 
+		#advisor = { } 
+		#field_marshal = { } 
+		#corps_commander = { } 
+		#navy_leader = { } 
+		#allowed_civil_war = { } 
+		
 	}
-	CZE_edvard_benesh={
-		name="Edvard Beneš"
-		portraits={
-			civilian={
-				large=GFX_portrait_Edvard_Benes
+	SVC_female_placeholder = {
+		name = SVC_female_placeholder
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_female_small" 
+				large = "GFX_portrait_SVC_female"
 			}
 		}
-		country_leader={
-			ideology=conservatism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	CZE_jaroslav_krejchi={
-		name="Jaroslav Krejčí"
-		portraits={
-			civilian={
-				large=GFX_portrait_Jaroslav_Krejci
-			}
-		}
-		country_leader={
-			ideology=nazism
-			expire="1965.1.1.1"
-			id=-1
-		}
+		#country_leader = { } 
+		#advisor = { } 
+		#field_marshal = { } 
+		#corps_commander = { } 
+		#navy_leader = { } 
+		#allowed_civil_war = { } 
+		
 	}
 	
-	CZE_radola_gadja={
-		name="Radola Gadja"
-		portraits={
-		    army={
-				large="gfx/leaders/CZE/radola_gadja.dds"
-				#small=GFX_portrait_CZE_vojtyech_luzha_small
-			}
-			civilian={
-				large=gfx/leaders/CZE/radola_gadja.dds
-			}
-		}
-		field_marshal={
-			traits={ offensive_doctrine logistics_wizard thorough_planner war_hero winter_specialist winter_expert infantry_officer }
-			skill=4
-			attack_skill=4
-			defense_skill=4
-			planning_skill=5
-			logistics_skill=4
-			visible = {
-                has_country_flag = Gadja_Field_Command			        
-			}
-		}
-		country_leader={
-			ideology=fascism_ideology
-			traits = { the_siberian_tiger }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	CZE_frantishek_havlik={
-		name=CZE_frantishek_havlik
-		portraits={
-			civilian={
-				large=GFX_portrait_CZE_frantishek_havlik
-			}
-		}
-		country_leader={
-			ideology=oligarchism
-			traits={ eager_collaborator captain_of_industry }
-			expire="1942.1.1.12"
-			id=-1
-		}
-	}
-
-	CZE_klement_gottwald={
-		name=CZE_klement_gottwald
-		portraits={
-			army={
-				small=GFX_portrait_CZE_klement_gottwald_small
-			}
-			civilian={
-				large=GFX_portrait_CZE_klement_gottwald
-			}
-		}
-		advisor={
-			slot = navy_chief
-			idea_token = CZE_klement_gottwald
-			allowed = {
-				original_tag = CZE
-			}
-			traits = {
-				navy_chief_reform_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
+	SVC_kare_player = {
+		name = SVC_kare_player
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_kare_player_small" 
+				large = "GFX_portrait_SVC_kare_player"
 			}
 		}
 		
-		country_leader={
-			ideology=stalinism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	CZE_vojtyech_luzha={
-		name=CZE_vojtyech_luzha
-		portraits={
-			army={
-				large="GFX_Portrait_czechoslovakia_vojtech_luza"
-				small=GFX_portrait_CZE_vojtyech_luzha_small
-			}
-		}
-		field_marshal={
-			traits={ offensive_doctrine fast_planner infantry_officer }
-			skill=3
-			attack_skill=4
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-
-	CZE_josef_shnejdarek={
-		name=CZE_josef_shnejdarek
-		portraits={
-			army={
-				large="GFX_Portrait_czechoslovakia_josef_snejdarek"
-				small=GFX_portrait_CZE_josef_shnejdarek_small
-			}
-		}
-		field_marshal={
-			traits={ defensive_doctrine thorough_planner organizer }
-			skill=3
-			attack_skill=3
-			defense_skill=4
-			planning_skill=2
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-
-	CZE_richard_tesarzhik={
-		name=CZE_richard_tesarzhik
-		portraits={
-			army={
-				large="GFX_Portrait_czechoslovakia_richard_tesarik"
-				small=GFX_portrait_CZE_richard_tesarzhik_small
-			}
-		}
-		corps_commander={
-			traits={ armor_officer }
-			skill=2
-			attack_skill=4
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-
-	CZE_sergej_vojcechovsky={
-		name=CZE_sergej_vojcechovsky
-		portraits={
-			army={
-				large="GFX_Portrait_czechoslovakia_sergej_vojcechovsky"
-				small=GFX_portrait_CZE_sergej_vojcechovsky_small
-			}
-		}
-		corps_commander={
-			traits={ winter_specialist }
-			skill=3
-			attack_skill=4
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=1
-			legacy_id=-1
-		}
 	}
 	
-	CZE_jan_syrovy={
-		name="Jan Syrový"
-		portraits={
-			army={
-				large="gfx/leaders/CZE/jan_syrovy.dds"
-				#small=GFX_portrait_CZE_jan_syrovy_small
+	#### THE COMMANDING GOATS #### 
+	
+	SVC_before_the_fall_commander = {
+		name = SVC_before_the_fall_commander
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_before_the_fall_commander_small" 
+				large = "GFX_portrait_SVC_before_the_fall_commander"
 			}
 		}
-		corps_commander={
-			traits={ inflexible_strategist infantry_officer career_officer }
-			skill=3
-			attack_skill=2
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=3
-			legacy_id=-1
-		}
-	}
-
-	### THEORISTS ###
-
-	CZE_karel_vaclav_petrik={
-		name="Karel Václav Petrík"
-		portraits={
-			army={
-				small="GFX_idea_CZE_karel_vaclav_petrik"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = CZE_karel_vaclav_petrik
-			ledger = army
-			allowed = {
-				original_tag = CZE
-			}
-			
-			traits = {
-				military_theorist
-			}
-		}		
-	}
-
-	CZE_alois_vicherek={
-		name=CZE_alois_vicherek
-		portraits={
-			army={
-				small="GFX_idea_CZE_alois_vicherek"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = CZE_alois_vicherek
-			ledger = air
-			allowed = {
-				original_tag = CZE
-			}
-			
-			traits = {
-				air_warfare_theorist
-			}
-		}
-	}
-
-
-	### ARMY CHIEFS ###
-
-	CZE_rudolf_viest={
-		name=CZE_rudolf_viest
-		portraits={
-			army={
-				small="GFX_idea_CZE_rudolf_viest"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = CZE_rudolf_viest
-			allowed = {
-				original_tag = CZE
-			}
-			traits = {
-				army_chief_offensive_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 0.500
-			}
-		}
-	}
-
-	CZE_ludvik_krejci={
-		name=CZE_ludvik_krejci
-		portraits={
-			army={
-			    large="gfx/leaders/CZE/ludvik_krejci.dds"
-				small="GFX_idea_CZE_ludvik_krejci"
-			}
-		}
-		field_marshal={
-			traits={ defensive_doctrine infantry_officer inflexible_strategist }
-			skill=3
-			attack_skill=2
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=2
-			legacy_id=-1
-		}
-		advisor={
-			slot = army_chief
-			idea_token = CZE_ludvik_krejci
-			allowed = {
-				original_tag = CZE
-			}
-			traits = {
-				army_chief_defensive_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-
-	CZE_ludvik_svoboda={
-		name=CZE_ludvik_svoboda
-		portraits={
-			army={
-				small="GFX_idea_CZE_ludvik_svoboda"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = CZE_ludvik_svoboda
-			allowed = {
-				original_tag = CZE
-			}
-			traits = {
-				army_chief_morale_3
-			}
-			cost = 200
-			ai_will_do = {
-				factor = 1.000
-			}
-		}		
-	}
-
-
-	### NAVY CHIEFS ###
-
-	# Klement Gottwald up there (Communist Country Leader -> Stalinism)
-
-	CZE_antonin_hasal={
-		name=CZE_antonin_hasal
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_europe_3"
-			}
-		}
-		advisor={
-			slot = navy_chief
-			idea_token = CZE_antonin_hasal
-			allowed = {
-				original_tag = CZE
-			}
-			traits = {
-				navy_chief_maneuver_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-
-	### AIR CHIEFS ###
-
-	CZE_karel_janousek={
-		name=CZE_karel_janousek
-		portraits={
-			army={
-				small="GFX_idea_CZE_karel_janousek"
-			}
-		}
-		advisor={
-			slot = air_chief
-			idea_token = CZE_karel_janousek
-			allowed = {
-				original_tag = CZE
-			}
-			traits = {
-				air_chief_safety_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-
-	CZE_jaroslav_fajfr={
-		name=CZE_jaroslav_fajfr
-		portraits={
-			army={
-				small="GFX_idea_CZE_jaroslav_fajfr"
-			}
-		}
-		advisor={
-			slot = air_chief
-			idea_token = CZE_jaroslav_fajfr
-			allowed = {
-				original_tag = CZE
-			}
-			traits = {
-				air_chief_ground_support_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-
-
-	### MILITARY HIGH COMMAND ###
-
-	CZE_jan_golian={
-		name=CZE_jan_golian
-		portraits={
-			army={
-				small="GFX_idea_CZE_jan_golian"
-			}
-		}
-		advisor={
-			slot = high_command
-			idea_token = CZE_jan_golian
-			ledger = army
-			allowed = {
-				original_tag = CZE
-			}
-			traits = {
-				army_regrouping_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}		
+		
 	}
 	
-	CZE_josef_frantisek={
-		name=CZE_josef_frantisek
-		portraits={
-			army={
-				small="GFX_idea_CZE_josef_frantisek"
+	SVC_11th_commander = {
+		name = SVC_11th_commander
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_11th_commander_small" 
+				large = "GFX_portrait_SVC_11th_commander"
 			}
 		}
-		advisor={
-			slot = high_command
-			idea_token = CZE_josef_frantisek
-			ledger = air
-			allowed = {
-				original_tag = CZE
-			}
-			traits = {
-				air_air_superiority_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-
-	CZE_karel_kuttelwascher={
-		name=CZE_karel_kuttelwascher
-		portraits={
-			army={
-				small="GFX_idea_CZE_karel_kuttelwascher"
-			}
-		}
-		advisor={
-			slot = high_command
-			idea_token = CZE_karel_kuttelwascher
-			ledger = air
-			allowed = {
-				original_tag = CZE
-			}
-			traits = {
-				air_air_combat_training_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
+		
 	}
 	
-	CZE_frantisek_havel={
-		name=CZE_frantisek_havel
-		portraits={
-			army={
-				small="GFX_idea_CZE_frantisek_havel"
+	SVC_keith_shadis = {
+		name = SVC_keith_shadis_1 
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_keith_shadis_1_small" 
+				large = "GFX_portrait_SVC_keith_shadis_1"
 			}
 		}
-		advisor={
-			slot = high_command
-			idea_token = CZE_frantisek_havel
-			ledger = army
-			allowed = {
-				original_tag = CZE
-			}
-			traits = {
-				army_logistics_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
+		
 	}
-
-
-	### POLITICAL ADVISORS ###
-
-	CZE_vojtech_tuka={
-		name=CZE_vojtech_tuka
-		portraits={
-			army={
-				small="GFX_idea_CZE_vojtech_tuka"
+	SVC_erwin_smith = {
+		name = SVC_erwin_smith_1 
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_erwin_smith_1_small" 
+				large = "GFX_portrait_SVC_erwin_smith_1"
 			}
 		}
-		advisor={
-			slot = political_advisor
-			idea_token = CZE_vojtech_tuka
-			allowed  = {
-				original_tag  = CZE
-			}
-			traits  = {
-				prince_of_terror 
-			}
-		}
+		
 	}
-
-	CZE_ferdinand_catlos={
-		name=CZE_ferdinand_catlos
-		portraits={
-			army={
-				small="GFX_idea_CZE_ferdinand_catlos"
+	SVC_erwin_smith_recruit = {
+		name = SVC_erwin_smith_0 
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_erwin_smith_0_small" 
+				large = "GFX_portrait_SVC_erwin_smith_0"
 			}
 		}
-		advisor={
-			slot = political_advisor
-			idea_token = CZE_ferdinand_catlos
-			allowed  = {
-				original_tag  = CZE
-			}
-			traits  = {
-				quartermaster_general 
-			}
-		}
+		
 	}
-
-	CZE_jozef_tiso={
-		name=CZE_jozef_tiso
-		portraits={
-			army={
-				small="GFX_idea_CZE_jozef_tiso"
+	SVC_levi_commander = {
+		name = SVC_levi_commander 
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_levi_commander_small" 
+				large = "GFX_portrait_SVC_levi_commander"
 			}
 		}
-		advisor={
-			slot = political_advisor
-			idea_token = CZE_jozef_tiso
-			allowed  = {
-				original_tag  = CZE
-			}
-			traits  = {
-				backroom_backstabber 
-			}
-			ai_will_do  = {
-				factor  = 0.000
-			}
-		}	
+		
 	}
-
-	CZE_stefan_osusky={
-		name=CZE_stefan_osusky
-		portraits={
-			army={
-				small="GFX_idea_CZE_stefan_osusky"
+	SVC_hange_commander = {
+		name = SVC_hange_commander 
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_hange_commander_small" 
+				large = "GFX_portrait_SVC_hange_commander"
 			}
 		}
-		advisor={
-			slot = political_advisor
-			idea_token = CZE_stefan_osusky
-			allowed  = {
-				original_tag  = CZE
-			}
-			available  = {
-				if  = {
-					limit  = {
-						has_dlc = "Death or Dishonor"
-					}
-					has_completed_focus  = CZE_democratic_bastion 
-				}
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					not  = {
-						has_autonomy_state  = autonomy_supervised_state
-					}
-				}
-			}
-			traits  = {
-				democratic_reformer 
-			}
-			ai_will_do  = {
-				factor  = 0.000
-			}
-		}
+		
 	}
-
-	CZE_gustav_husak={
-		name=CZE_gustav_husak
-		portraits={
-			army={
-				small="GFX_idea_CZE_gustav_husak"
+	SVC_armin_commander = {
+		name = SVC_armin_commander 
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_armin_commander_small" 
+				large = "GFX_portrait_SVC_armin_commander"
 			}
 		}
-		advisor={
-			slot = political_advisor
-			idea_token = CZE_gustav_husak
-			allowed  = {
-				original_tag  = CZE
-			}
-			available  = {
-				if  = {
-					limit  = {
-						has_dlc = "Death or Dishonor"
-					}
-					has_completed_focus  = CZE_go_left 
-				}
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					not  = {
-						has_autonomy_state  = autonomy_supervised_state
-					}
-				}
-			}
-			traits  = {
-				communist_revolutionary 
-			}
-			ai_will_do  = {
-				base = 0
-				modifier = {
-					add = 20
-					OR = {
-						has_country_flag = CZE_AI_RANDOM_COMMUNIST
-						has_game_rule = {
-							rule = CZE_ai_behavior
-							option = COMMUNIST
-						}
-					}
-				}
+		
+	}
+	SVC_floch_commander = {
+		name = SVC_floch_commander 
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_floch_commander_small" 
+				large = "GFX_portrait_SVC_floch_commander"
 			}
 		}
+		
 	}
 	
-	CZE_konrad_henlein={
-		name=CZE_konrad_henlein
-		portraits={
-			army={
-				small="GFX_idea_CZE_konrad_henlein"
+	#### TEAM MIKE #### 
+	
+	SVC_mike_zacharius = {
+		name = SVC_mike_zacharius
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_mike_zacharius_small" 
+				large = "GFX_portrait_SVC_mike_zacharius"
 			}
 		}
-		advisor={
-			slot = political_advisor
-			idea_token = CZE_konrad_henlein
-			allowed  = {
-				original_tag  = CZE
-			}
-			available  = {
-				if  = {
-					limit  = {
-						has_dlc = "Death or Dishonor"
-					}
-					has_completed_focus  = CZE_go_right 
-				}
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					not  = {
-						has_autonomy_state  = autonomy_supervised_state
-					}
-				}
-			}
-			traits  = {
-				fascist_demagogue 
-			}
-			ai_will_do  = {
-				base = 0
-				modifier = {
-					add = 20
-					OR = {
-						has_country_flag = CZE_AI_RANDOM_FASCIST
-						has_game_rule = {
-							rule = CZE_ai_behavior
-							option = FASCIST
-						}
-					}
-				}
-			}
-		}		
+		
 	}
-
+	SVC_nanaba = {
+		name = SVC_nanaba
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_nanaba_small" 
+				large = "GFX_portrait_SVC_nanaba"
+			}
+		}
+		
+	}
+	SVC_gelgar = {
+		name = SVC_gelgar
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_gelgar_small" 
+				large = "GFX_portrait_SVC_gelgar"
+			}
+		}
+		
+	}
+	SVC_henning = {
+		name = SVC_henning
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_henning_small" 
+				large = "GFX_portrait_SVC_henning"
+			}
+		}
+		
+	}
+	SVC_lynne = {
+		name = SVC_lynne
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_lynne_small" 
+				large = "GFX_portrait_SVC_lynne"
+			}
+		}
+		
+	}
 	
-
-	# Illusive Gentleman auto-generated
-}
+	
+	#### TEAM HANGE #### 
+	
+	SVC_hange_zoe_1 = {
+		name = SVC_hange_zoe_1
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_hange_zoe_1_small" 
+				large = "GFX_portrait_SVC_hange_zoe_1"
+			}
+		}
+		
+	}
+	SVC_moblit_berner = {
+		name = SVC_moblit_berner
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_moblit_berner_small" 
+				large = "GFX_portrait_SVC_moblit_berner"
+			}
+		}
+		
+	}
+	SVC_nifa = {
+		name = SVC_nifa
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_nifa_small" 
+				large = "GFX_portrait_SVC_nifa"
+			}
+		}
+		
+	}
+	SVC_abel_goggles = {
+		name = SVC_abel_goggles
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_abel_goggles_small" 
+				large = "GFX_portrait_SVC_abel_goggles"
+			}
+		}
+		
+	}
+	
+	SVC_sawny_bean = {
+		name = SVC_sawny_bean
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_sawny_bean_small" 
+				large = "GFX_portrait_SVC_sawny_bean"
+			}
+		}
+		
+	}
+	
+	
+	#### TEAM LEVI #### 
+	
+	SVC_levi_ackermann = {
+		name = SVC_levi_ackermann_1 
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_levi_ackermann_1_small" 
+				large = "GFX_portrait_SVC_levi_ackermann_1"
+			}
+		}
+		
+	}
+	
+	SVC_petra_ral = {
+		name = SVC_petra_ral
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_petra_ral_small" 
+				large = "GFX_portrait_SVC_petra_ral"
+			}
+		}
+		
+	}
+	SVC_oluo_bozado = {
+		name = SVC_oluo_bozado
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_oluo_bozado_small" 
+				large = "GFX_portrait_SVC_oluo_bozado"
+			}
+		}
+		
+	}
+	SVC_eld_jinn = {
+		name = SVC_eld_jinn
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_eld_jinn_small" 
+				large = "GFX_portrait_SVC_eld_jinn"
+			}
+		}
+		
+	}
+	SVC_gunther_schultz = {
+		name = SVC_gunther_schultz
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_gunther_schultz_small" 
+				large = "GFX_portrait_SVC_gunther_schultz"
+			}
+		}
+		
+	}
+	
+	
+	
+	#### 104TH CADETS MAIN CHARACTERS #### 
+	
+	SVC_eren_mikasa_armin = {
+		name = SVC_eren_mikasa_armin
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_eren_mikasa_armin_small" 
+				large = "GFX_portrait_SVC_eren_mikasa_armin"
+			}
+		}
+		
+	}
+	
+	SVC_eren_yeager = {
+		name = SVC_eren_yeager
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_eren_yeager_small" 
+				large = "GFX_portrait_SVC_eren_yeager"
+			}
+		}
+		
+	}
+	SVC_mikasa_ackermann = {
+		name = SVC_mikasa_ackermann
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_mikasa_ackermann_small" 
+				large = "GFX_portrait_SVC_mikasa_ackermann"
+			}
+		}
+		
+	}
+	SVC_armin_arlert = {
+		name = SVC_armin_arlert
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_armin_arlert_small" 
+				large = "GFX_portrait_SVC_armin_arlert"
+			}
+		}
+		
+	}
+	SVC_krista_lenz = {
+		name = SVC_krista_lenz
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_krista_lenz_small" 
+				large = "GFX_portrait_SVC_krista_lenz"
+			}
+		}
+		
+	}
+	SVC_historia_reiss = {
+		name = SVC_historia_reiss
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_historia_reiss_small" 
+				large = "GFX_portrait_SVC_historia_reiss"
+			}
+		}
+		
+	}
+	SVC_ymir_outcast = {
+		name = SVC_ymir_outcast
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_ymir_outcast_small" 
+				large = "GFX_portrait_SVC_ymir_outcast"
+			}
+		}
+		
+	}
+	
+	SVC_jean_kirstein = {
+		name = SVC_jean_kirstein
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_jean_kirstein_small" 
+				large = "GFX_portrait_SVC_jean_kirstein"
+			}
+		}
+		
+	}
+	SVC_connie_springer = {
+		name = SVC_connie_springer
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_connie_springer_small" 
+				large = "GFX_portrait_SVC_connie_springer"
+			}
+		}
+		
+	}
+	SVC_sasha_braus = {
+		name = SVC_sasha_braus
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_sasha_braus_small" 
+				large = "GFX_portrait_SVC_sasha_braus"
+			}
+		}
+		
+	}
+	SVC_marco_bott = {
+		name = SVC_marco_bott
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_marco_bott_small" 
+				large = "GFX_portrait_SVC_marco_bott"
+			}
+		}
+		
+	}
+	
+	
+	SVC_reiner_braun = {
+		name = SVC_reiner_braun
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_reiner_braun_small" 
+				large = "GFX_portrait_SVC_reiner_braun"
+			}
+		}
+		
+	}
+	SVC_bertolt_hoover = {
+		name = SVC_bertolt_hoover
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_bertolt_hoover_small" 
+				large = "GFX_portrait_SVC_bertolt_hoover"
+			}
+		}
+		
+	}
+	
+	SVC_annie_leonhart = {
+		name = SVC_character_placeholder
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_annie_leonhart_small" 
+				large = "GFX_portrait_SVC_annie_leonhart"
+			}
+		}
+		
+	}
+	SVC_marcel_galliard = {
+		name = SVC_marcel_galliard
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_marcel_galliard_small" 
+				large = "GFX_portrait_SVC_marcel_galliard"
+			}
+		}
+		
+	}
+	
+	#### 104TH CADETS OTHER #### 
+	
+	SVC_thomas_wagner = {
+		name = SVC_thomas_wagner
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_thomas_wagner_small" 
+				large = "GFX_portrait_SVC_thomas_wagner"
+			}
+		}
+		
+	}
+	SVC_mina_carolina = {
+		name = SVC_mina_carolina
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_mina_carolina_small" 
+				large = "GFX_portrait_SVC_mina_carolina"
+			}
+		}
+		
+	}
+	
+	SVC_daz = {
+		name = SVC_daz
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_daz_small" 
+				large = "GFX_portrait_SVC_daz"
+			}
+		}
+		
+	}
+	SVC_samuel_linke_jackson = {
+		name = SVC_samuel_linke_jackson
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_samuel_linke_jackson_small" 
+				large = "GFX_portrait_SVC_samuel_linke_jackson"
+			}
+		}
+		
+	}
+	SVC_tom = {
+		name = SVC_tom
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_tom_small" 
+				large = "GFX_portrait_SVC_tom"
+			}
+		}
+		
+	}
+	
+	SVC_hannah_diamant = {
+		name = SVC_hannah_diamant
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_hannah_diamant_small" 
+				large = "GFX_portrait_SVC_hannah_diamant"
+			}
+		}
+		
+	}
+	SVC_franz_kefka = {
+		name = SVC_franz_kefka
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_franz_kefka_small" 
+				large = "GFX_portrait_SVC_franz_kefka"
+			}
+		}
+		
+	}
+	
+	
+	#### OTHER #### 
+	
+	SVC_shadis_adjutant = {
+		name = SVC_shadis_adjutant
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_shadis_adjutant_small" 
+				large = "GFX_portrait_SVC_shadis_adjutant"
+			}
+		}
+		
+	}
+	SVC_dieter_ness = {
+		name = SVC_dieter_ness
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_dieter_ness_small" 
+				large = "GFX_portrait_SVC_dieter_ness"
+			}
+		}
+		
+	}
+	SVC_ilse_langnar = {
+		name = SVC_ilse_langnar
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_ilse_langnar_small" 
+				large = "GFX_portrait_SVC_ilse_langnar"
+			}
+		}
+		
+	}
+	
+	SVC_flagon_darlett = {
+		name = SVC_flagon_darlett
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_flagon_darlett_small" 
+				large = "GFX_portrait_SVC_flagon_darlett"
+			}
+		}
+		
+	}
+	SVC_farlan_church = {
+		name = SVC_farlan_church
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_farlan_church_small" 
+				large = "GFX_portrait_SVC_farlan_church"
+			}
+		}
+		
+	}
+	SVC_isabel_magnolia = {
+		name = SVC_isabel_magnolia
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_isabel_magnolia_small" 
+				large = "GFX_portrait_SVC_isabel_magnolia"
+			}
+		}
+		
+	}
+	
+	
+	
+	#### OTHER CORPS IMPORTS #### 
+	
+	SVC_lobov_garisson = {
+		name = SVC_lobov_garisson
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_lobov_garisson_small" 
+				large = "GFX_portrait_SVC_lobov_garisson"
+			}
+		}
+		
+	}
+	
+	SVC_marlowe_freudenberg = {
+		name = SVC_marlowe_freudenberg
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_marlowe_freudenberg_small" 
+				large = "GFX_portrait_SVC_marlowe_freudenberg"
+			}
+		}
+		
+	}
+	SVC_hitch_dreyse = {
+		name = SVC_hitch_dreyse
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_hitch_dreyse_small" 
+				large = "GFX_portrait_SVC_hitch_dreyse"
+			}
+		}
+		
+	}
+	SVC_dot_pixis = {
+		name = SVC_hitch_dreyse
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_dot_pixis_small" 
+				large = "GFX_portrait_SVC_dot_pixis"
+			}
+		}
+		
+	}
+	
+	#### FUTURE YEAGERISTS #### 
+	
+	SVC_floch_forster = {
+		name = SVC_floch_forster_1
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_floch_forster_1_small" 
+				large = "GFX_portrait_SVC_floch_forster_1"
+			}
+		}
+		
+	}
+	SVC_floch_forster_2 = {
+		name = SVC_floch_forster_2
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_floch_forster_2_small" 
+				large = "GFX_portrait_SVC_floch_forster_2"
+			}
+		}
+		
+	}
+	
+	SVC_eren_yeager_leader = {
+		name = SVC_eren_yeager_leader
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_eren_yeager_leader_small" 
+				large = "GFX_portrait_SVC_eren_yeager_leader"
+			}
+		}
+		
+	}
+	
+	SVC_louise = {
+		name = SVC_louise
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_louise_small" 
+				large = "GFX_portrait_SVC_louise"
+			}
+		}
+		
+	}
+	SVC_holger = {
+		name = SVC_holger
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_holger_small" 
+				large = "GFX_portrait_SVC_holger"
+			}
+		}
+		
+	}
+	
+	SVC_wim = {
+		name = SVC_wim
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_wim_small" 
+				large = "GFX_portrait_SVC_wim"
+			}
+		}
+		
+	}
+	SVC_surma = {
+		name = SVC_surma
+		portraits = {
+			army = {
+				small = "GFX_portrait_SVC_surma_small" 
+				large = "GFX_portrait_SVC_surma"
+			}
+		}
+		
+	}
+	
+	
+	
+	#SVC_character_placeholder = { 
+	#	name = SVC_character_placeholder 
+	#	portraits = { 
+	#		army = { 
+	#			small = "GFX_portrait_SVC_placeholder_small" 
+	#			large = "GFX_portrait_SVC_placeholder" 
+	#		} 
+	#	} 
+	#	 
+	#} 
+	
+	
+	
+) 
