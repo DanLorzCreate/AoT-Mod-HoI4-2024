@@ -1,4 +1,6 @@
-capital = 44
+﻿capital = 44 
+
+#OOB = "RSS_1000"
 
 set_research_slots = 1 
 set_stability = 0.6 
@@ -8,8 +10,7 @@ add_command_power = 5
 set_fuel_ratio = 0.1 
 set_convoys = 10
 
-OOB = "RSS_1000" 
-add_manpower = 2000 
+#add_manpower = 2000 
 
 # Starting tech
 set_technology = {
@@ -18,9 +19,9 @@ set_technology = {
 
 create_faction = KINGDOM_OF_WALLS 
 add_to_faction = RSS 
-add_to_faction = SVC 
-add_to_faction = GRC 
-add_to_faction = MYP 
+#add_to_faction = SVC 
+#add_to_faction = GRC 
+#add_to_faction = MYP 
 #puppet = SVC 
 #puppet = GRC 
 #puppet = MYP 
@@ -31,9 +32,9 @@ add_ideas = {
 
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1936.1.1"
+	last_election = "136.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	democratic = 5
@@ -51,6 +52,10 @@ create_country_leader = {
 	traits = {
 		#
 	}
+}
+
+829.1.1 = {
+	
 }
 
 
@@ -75,5 +80,6 @@ create_country_leader = {
 ###OPERATIVES 
 
 #recruit_character = RSS_name 
+
 
 

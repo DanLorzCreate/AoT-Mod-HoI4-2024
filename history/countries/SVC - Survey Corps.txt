@@ -1,4 +1,6 @@
-capital = 45
+﻿capital = 45 
+
+#OOB = "SVC_1000"
 
 set_research_slots = 1 
 set_stability = 0.6 
@@ -8,8 +10,8 @@ add_command_power = 5
 set_fuel_ratio = 0.1 
 set_convoys = 10
 
-#oob = "SVC_1000"
-add_manpower = 100 
+
+#add_manpower = 1000 
 
 # Starting tech
 set_technology = {
@@ -41,3 +43,4 @@ create_country_leader = {
 		#
 	}
 }
+
